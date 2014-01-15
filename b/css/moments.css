@@ -805,7 +805,7 @@ main { padding: 0; }
     left: 80%;
     width: 130px;
     height: 118px;
-    background: url(../../pov3/img/m4/bulle.svg) no-repeat 0 0;
+    background: url(../img/m4/bulle.svg) no-repeat 0 0;
             
     -webkit-animation: bulle 3s steps(3) infinite;
       -moz-animation: bulle 3s steps(3) infinite;
