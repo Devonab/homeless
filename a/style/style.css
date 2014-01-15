@@ -30,6 +30,11 @@ footer {
     height:auto;
 }
 
+footer p a {
+    color:white;
+    text-decoration:none;
+}
+
 #logo {
     position:absolute;
     height:30px;
