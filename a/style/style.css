@@ -9,7 +9,7 @@ html, body {
     background-image:url(../img/interface/h-bk.png);
     background-repeat:no-repeat;
     background-color:rgba(30,45,59,1);
-    padding-top:80px;
+    padding-top:60px;
 }
 
 main {
@@ -19,7 +19,6 @@ main {
     max-height:100%;
     position:relative;
     border:2px rgb(33,30,38) solid;
-    border-bottom:none;
     z-index:1;
     overflow:hidden;
 } 
@@ -27,8 +26,8 @@ main {
 footer {
     position:fixed;
     bottom:0;
-    height:30px;
     width:100%;
+    height:auto;
 }
 
 #logo {
@@ -41,10 +40,31 @@ footer {
 #txt_footer {
     position:absolute;
     left:15%;
+    bottom:0%;
     font-family:monospace;
     color:#FFF;
     font-size:10px;
-    line-height:30px;
+    line-height:300%;
+}
+
+#texte {
+    position:absolute;
+    -webkit-transform-origin:top center;
+    -moz-transform-origin:top center;
+    -ms-transform-origin:top center;
+    left:14.7%;
+    background-color:rgba(256,256,256,0.4);
+    width:70%;
+    padding:5px;
+    z-index:102;
+    font-family:monospace;
+    font-size:14px;
+    border-radius:10px;
+}
+
+#blocantiscroll {
+    height:100%;
+    overflow:hidden;
 }
 
 /*Scène 1*/
@@ -62,6 +82,8 @@ footer {
     height:90%; 
     z-index:100;
     -webkit-animation: beug 5s ease-in-out infinite normal;
+    -moz-animation: beug 5s ease-in-out infinite normal;
+    -ms-animation: beug 5s ease-in-out infinite normal;
 }
 
 #affiche {
@@ -73,10 +95,16 @@ footer {
     z-index:100;
     -webkit-animation: tangue 2s ease-in-out infinite alternate ;
     -webkit-transform-origin:top;
+    -moz-animation: tangue 2s ease-in-out infinite alternate ;
+    -moz-transform-origin:top;
+    -ms-animation: tangue 2s ease-in-out infinite alternate ;
+    -ms-transform-origin:top;
 }
 
 #affiche:hover {
     -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -ms-animation-play-state:paused;
 }
 
 #echarpe {
@@ -100,6 +128,8 @@ footer {
     right:25%;
     bottom:25%;
     -webkit-animation: larme 1s ease-in infinite normal;
+    -moz-animation: larme 1s ease-in infinite normal;
+    -ms-animation: larme 1s ease-in infinite normal;
 }
 
 #policier {
@@ -125,17 +155,6 @@ footer {
     top:3%;
 }
 
-#texte {
-    position:absolute;
-    background-color:rgba(256,256,256,0.4);
-    width:98%;
-    padding:5px;
-    z-index:102;
-    font-family:monospace;
-    font-size:14px;
-    border-radius:10px;
-}
-
 /*Scène 2*/
 
 #ecran {
@@ -158,10 +177,18 @@ footer {
     -webkit-animation: pulse 1S ease-in-out ;
     -webkit-animation-delay:2s;
     -webkit-animation-iteration-count: 5;
+    -moz-animation: pulse 1S ease-in-out ;
+    -moz-animation-delay:2s;
+    -moz-animation-iteration-count: 5;
+    -ms-animation: pulse 1S ease-in-out ;
+    -ms-animation-delay:2s;
+    -ms-animation-iteration-count: 5;
 }
 
 #avis:hover {
-    -webkit-transform:scale(1.02)
+    -webkit-transform:scale(1.02);
+    -moz-transform:scale(1.02);
+    -ms-transform:scale(1.02);
 }
 
 #photo_bijoutier {
@@ -175,6 +202,8 @@ footer {
 
 #photo_bijoutier:hover {
     -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
 }
 
 #photo_bijoutiere {
@@ -188,6 +217,8 @@ footer {
 
 #photo_bijoutiere:hover {
     -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
 }
 
 #policier_s2 {
@@ -233,6 +264,10 @@ footer {
 #bras:hover{
     -webkit-transform-origin:bottom center;
     -webkit-animation:tourne 2s ease-in-out infinite normal;
+    -moz-transform-origin:bottom center;
+    -moz-animation:tourne 2s ease-in-out infinite normal;
+    -ms-transform-origin:bottom center;
+    -ms-animation:tourne 2s ease-in-out infinite normal;
 }
 
 #accident {
@@ -257,6 +292,12 @@ footer {
     -webkit-transform-origin:top left;
     -webkit-animation:balance 2s ease-out 1 normal;
     -webkit-animation-fill-mode:forwards;
+    -moz-transform-origin:top left;
+    -moz-animation:balance 2s ease-out 1 normal;
+    -moz-animation-fill-mode:forwards;
+    -ms-transform-origin:top left;
+    -ms-animation:balance 2s ease-out 1 normal;
+    -ms-animation-fill-mode:forwards;
 }
 
 #breaking {
@@ -266,6 +307,8 @@ footer {
     left:3.5%;
     padding-top:40px;
     -webkit-animation:pulse 2s ease-out infinite normal;
+    -moz-animation:pulse 2s ease-out infinite normal;
+    -ms-animation:pulse 2s ease-out infinite normal;
 }
 
 .bulle_s3 {
@@ -297,6 +340,10 @@ footer {
     position:absolute;
     -webkit-transform-origin:bottom left;
     -webkit-transform:rotate(-10deg);
+    -moz-transform-origin:bottom left;
+    -moz-transform:rotate(-10deg);
+    -ms-transform-origin:bottom left;
+    -ms-transform:rotate(-10deg);
     right:24.5%;
     bottom:26.4%;
     height:35%;
@@ -307,6 +354,10 @@ footer {
     position:absolute;
     -webkit-transform-origin:bottom left;
     -webkit-transform:rotate(-10deg);
+    -moz-transform-origin:bottom left;
+    -moz-transform:rotate(-10deg);
+    -ms-transform-origin:bottom left;
+    -ms-transform:rotate(-10deg);
     left:30%;
     bottom:20%;
     height:35%;
@@ -319,10 +370,14 @@ footer {
     bottom:20%;
     height:8%;
     -webkit-animation:vibre 3s ease-out infinite normal;
+    -moz-animation:vibre 3s ease-out infinite normal;
+    -ms-animation:vibre 3s ease-out infinite normal;
 }
 
 #tel:hover {
     -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -ms-animation-play-state:paused;
 }
 
 #fumee {
@@ -331,6 +386,8 @@ footer {
     top:43%;
     height:16%;
     -webkit-animation:fumee 2s linear infinite normal;
+    -moz-animation:fumee 2s linear infinite normal;
+    -ms-animation:fumee 2s linear infinite normal;
     z-index:60;
 }
 
@@ -370,6 +427,10 @@ footer {
     left:34.3%;
     -webkit-transform-origin:left;
     -webkit-animation:giroD 1.5s linear infinite alternate;
+    -moz-transform-origin:left;
+    -moz-animation:giroD 1.5s linear infinite alternate;
+    -ms-transform-origin:left;
+    -ms-animation:giroD 1.5s linear infinite alternate;
 }
 
 #giroG{
@@ -379,4 +440,8 @@ footer {
     right:65%;
     -webkit-transform-origin:right;
     -webkit-animation:giroG 1.5s linear infinite alternate;
+    -moz-transform-origin:right;
+    -moz-animation:giroG 1.5s linear infinite alternate;
+    -ms-transform-origin:right;
+    -ms-animation:giroG 1.5s linear infinite alternate;
 }
