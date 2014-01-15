@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site naratif">
+    <meta name="author" content="Alexandre Buruk, Guillaume Deschryver, Mikaël Haeck & Antoine Lagna">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="css/moments.css">
+    <title>Le coup fatal | William - Homeless |</title>
+    <style>
+        body { overflow: hidden;} 
+        main { padding: 0; margin: 0; text-align: left;}
+      
+        @-webkit-keyframes sections {
+            from { -webkit-transform: translateY(-768px); }
+            to { -webkit-transform: translateY(768px); }
+        }
+        @-webkit-keyframes weapon {
+            0% { -webkit-transform: rotate(0deg); }
+            70% { -webkit-transform: rotate(0deg); }
+            75% { -webkit-transform: translateX(100px) rotate(23deg); }
+            100% { -webkit-transform: translateX(0px) rotate(0deg);}
+        }
+        @-webkit-keyframes muzzle {
+            0% { -webkit-opacity: 0; }
+            50% { -webkit-opacity: 1;}
+            100% { -webkit-opacity: 0; }
+        }
+        #gauche, #droite, #milieu {
+            position: relative;
+            top: -768px;
+            margin: 0 -5px;
+            height: 768px;
+            overflow: hidden;
+            width:calc(100% / 3);
+            display:inline-block;
+            border: 5px solid #000;
+        }
+        
+        #gauche {
+            background: url(img/m3/gauche.svg) no-repeat;
+            background-size: cover;
+            
+            -webkit-animation: sections 1s linear forwards;
+        }
+        
+        #milieu {
+            background: url(img/m3/milieu.svg) no-repeat;
+            background-size: cover;
+            
+            -webkit-animation: sections 2s linear forwards;
+        
+        }
+        #droite {
+            width: 32.3%;
+            background: url(img/m3/droite.svg) no-repeat;
+            background-size: cover;
+            
+            -webkit-animation: sections 3s linear forwards;
+        }
+        #texte { position: fixed; bottom: 0; }
+        
+        #weapon {
+            width: 300px;
+            height: 330px;
+            position: absolute;
+            text-indent: -9999px;
+            left: 130px;
+            top: 200px;
+            background: url(img/m3/weapon.svg) no-repeat;
+            
+            -webkit-animation: weapon 4s linear forwards;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <main>
+            
+        <section id="gauche"></section>
+        <section id="milieu">
+            <div id="weapon">arme</div>
+        </section>
+        <section id="droite"></section>
+           
+           <section id="texte">
+               
+               <p>
+                Que faire ? Que faire en attendant ? Je ne pourrais jamais lui donner ce qu'il veut ! J'ai peur, je panique, il me menace, je le menace. J'ai une femme que j'aime ! Et si il m'attaque ? Et si je meurs ?? Et si... 
+              </p>
+           
+           </section> <!-- end texte -->
+                     
+      
+    </main>
+    
+    <footer id="page">
+           <ul id="list-2">
+               <li><a id="dwm" href="http://www.dwm.re" target="_blank">dwm</a></li>
+                <li> - Homeless</li>
+            </ul>
+    </footer>   
+        
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('#parallax .parallax-layer')
+            .parallax({
+                    mouseport: jQuery('#parallax')
+            });
+            
+            $("#texte").hide(0).delay(200).fadeIn(1000)
+            
+            // page suivante
+            $('body').keydown(function (e) {
+                if (e.keyCode == 40) {
+                    window.location = '4.html';
+                }
+            });
+            
+            // page précédente
+            $('body').keydown(function (e) {
+                if (e.keyCode == 38) {
+                    window.location = '2.html';
+                }
+            });
+
+    });
+  </script>
+
+</body>
+</html>

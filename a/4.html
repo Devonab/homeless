@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jones Moment 4 - Workshop DWMWKID</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/animation.css" />
+    
+</head>
+<body>
+    
+    <div id="bg">
+
+    <main>
+        
+        <img id="general" src="img/scene4/general.svg" alt="La scène représente l'officier Jones arrivé sur les lieux de l'accident." />
+        
+        <a href="5.html"><img id="policier_s4" src="img/scene4/policier.svg" alt="Policier Jones vu de dos." /></a>
+        
+        <a href="#"><img id="femme" src="img/scene4/femme.svg" alt="La conductrice de la voiture est mort a cause du crache. Elle a le visage en sang et ne respire plus." /></a>
+        
+        <a href="#"><img id="enfant" src="img/scene4/enfant.svg" alt="L'enfant assi a l'arriere du vehicule est vivant et regarde Jones d'un air malheureux." /></a>
+        
+        <a href="#"><img id="tel" src="img/scene4/telephone.svg" alt="Un telephone portable est sur la route non loin du lieu du crache." /></a>
+        
+        <img id="fumee" src="img/scene4/fumee.svg" alt="Fumée s'échappant du capot de la voiture accidentée." />
+        
+        <img id="foret" src="img/scene4/arbres.svg" alt="Foret." />
+        
+        <p class="bulle_s2">
+                ""
+        </p>
+        
+    </main>
+        
+        <footer>
+            
+            <p id="txt_footer">Homeless</p>
+        
+            <a href="www.dwm.re"><img id="logo" src="img/interface/logo-dwm-white.svg"></a>
+            
+        </footer>
+        
+    </div><!-- end bg -->
+    
+<script src="js/jquery-1.10.2.min.js"></script>
+<script>
+        jQuery(document).ready(function(){
+            
+            // page suivante
+            $('body').keydown(function (e) {
+                if (e.keyCode == 40) {
+                    window.location = '5.html';
+                }
+            });
+            
+            // page précédente
+            $('body').keydown(function (e) {
+                if (e.keyCode == 38) {
+                    window.location = '3.html';
+                }
+            });
+
+        });
+  </script>
+</body>
+</html>

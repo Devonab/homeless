@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kate1</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <main>
+               <img class="fond" src="img/tab_bord.svg" alt="Tableau de bord de voiture" />
+               
+               <img id="siege" src="img/sieges_retro_bijou.svg" alt="La bijoutière assise dans sa voiture">
+           
+           		<a href="#"> <img src="img/bijou.svg" id="bijou" alt="bijou offert par son mari" ></a>
+           
+           		<a href="#"> <img src="img/telephone.svg" id="allo" alt="Magnifique telephone rose" ></a>
+           
+            	<img id="retro" src="img/retro.svg" alt="Retroviseur de voiture">
+           
+			   <div id="grise" class="bas"></div>
+			   <div id="clair" class="bas"></div>
+			   <div id="foncee" class="bas"> 
+               		<p>Ce GSM m'énerve à sonner sans arrêts! ... 
+               <p>Allo loulou, c'est toi ? ...Quoi !? Ca va ?! </p> <img src="img/boucle.svg" id="boucle" alt="bocle raffinée avec le logo de la bijouterie"></div>
+       </main>
+       <footer>
+       </footer>
+        
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script>
+                jQuery(document).ready(function(){
+                    console.log('jsok');
+                              // page suivante
+            $('body').keydown(function (e) {
+                if (e.keyCode == 40) {
+                    window.location = 'bijoutiere_3.html';
+                }
+            });
+            
+            // page précédente
+            $('body').keydown(function (e) {
+                if (e.keyCode == 38) {
+                    window.location = 'bijoutiere_1.html';
+                }
+            });
+                    
+                });
+            </script>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site naratif">
+    <meta name="author" content="Alexandre Buruk, Guillaume Deschryver, Mikaël Haeck & Antoine Lagna">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="css/moments.css">
+    <title>La bijouterie | William - Homeless |</title>
+</head>
+<body>
+    
+   <main>
+       
+       
+       <section class="parallax-viewport" id="parallax">
+           
+           <div class="parallax-layer" style="width: 99%; height:100%;" >
+               <img src="img/m1/l-b.svg"  alt="fond" />
+               <div id="tv"></div>
+           </div>
+           
+           <div class="parallax-layer" style="width: 98%; height: 100%;">
+               <img id="william_svg" src="img/m1/l-m.svg" alt="william"/>
+           </div>
+           
+           <div class="parallax-layer" style="width: 100%; height: 100%;">
+               <img src="img/m1/l-d.svg" alt="lumières" />
+           </div>
+           
+           <div class="parallax-layer" style="width: 90%; height: 100%; position: absolute; top: 30%;">
+               <img id="kate1" src="img/m1/l-dd.svg" alt="Kate"/>
+            </div>
+         
+       <!-- lien Kate -->
+           <a id="dame" href="#">kate</a>
+           <div class="bulle_dame"><p>" Ma femme s'en va. C'est une gentille personne, douce et calme. Dommage qu'elle ne puisse rester près de moi."</p></div>
+           
+        <!-- lien william -->
+           <a id="william" href="william_2.html">william</a>
+           <div class="bulle_william"><p>" Le temps pour moi de préparer ce collier, ensuite j'ouvre la boutique."</p></div>
+       
+       <!-- lien television -->
+           <a id="tele" href="#">television</a>
+           <div class="bulle_tele"><p>"J'ai encore oublié d'éteindre le poste... Il passe un reportage sur les sans-abris."</p></div>
+       
+       <!-- lien panneau surveillance -->
+           <a id="pan" href="#">panneau surveillance</a>
+           <div class="bulle_pan"><p>"En liaison direct avec la police. &Ccedil;a coûte une fortune !"</p></div>
+           
+
+       
+       </section> <!-- end parallax-viewport -->
+       
+       <section id="texte">
+           
+           <p>
+           C'est reparti pour une nouvelle journée. Je compte bientôt ouvrir, j'attends juste que ma femme parte travailler. J'aurais bien voulu qu'elle reste m'aider mais je devrais pouvoir gérer seul. Ajourd'hui, j'attends pas beaucoup de monde de toute façon.
+          </p>
+       
+       </section> <!-- end texte -->
+                     
+       
+    </main>
+    
+    <footer id="page">
+        <ul id="list-2">
+            <li><a id="dwm" href="http://www.dwm.re" target="_blank">dwm</a></li>
+            <li> - Homeless</li>
+        </ul>
+    </footer>  
+        
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('#parallax .parallax-layer')
+            .parallax({
+                    mouseport: jQuery('#parallax')
+            });
+            
+            $("#texte").hide(0).delay(200).fadeIn(1000)
+            
+            // page suivante
+            $('body').keydown(function (e) {
+                if (e.keyCode == 40) {
+                    window.location = '2.html';
+                }
+            });
+            
+            // page précédente
+            $('body').keydown(function (e) {
+                if (e.keyCode == 38) {
+                    window.location = '../index.html';
+                }
+            });
+
+        });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jones Moment 3 - Workshop DWMWKID</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/animation.css" />
+    
+</head>
+<body>
+    
+    <div id="bg">
+
+    <main>
+        
+        <img id="general" src="img/scene3/general.svg" alt="La scène représente l'officier Jones devant la carte de la ville, et de ses alentour, entrain d'entourer la zone de l'accident." />
+        
+        <a href="4.html"><img id="policier_s3" src="img/scene3/policier.svg" alt="Jones" /></a>
+            
+            <p class="bulle_s3">
+                "C'est vraiment une sale journée ... Un braquage et un accident grave ..."
+            </p>
+        
+        <a id="accident" href="#">test</a><img id="bras" src="img/scene3/bras.svg" alt="bras animé du policier." />
+        
+        <a href="#"><img id="wanted" src="img/scene3/wanted.svg" alt="affiche de recherche du SDF" /></a>
+        
+        <a href="#"><img id="breaking" src="img/scene3/breaking.svg" /></a>
+        
+        <div id="texte">
+            <p>
+                "Attention ... 1050 implicant une voiture sur la route entre Indian Wells et Bekersfeild, au niveau de Kernse River"
+            </p>
+            
+        </div>
+        
+        </main>
+        
+        <footer>
+            
+            <p id="txt_footer">Homeless</p>
+        
+            <a href="www.dwm.re"><img id="logo" src="img/interface/logo-dwm-white.svg"></a>
+            
+        </footer>
+        
+    </div><!-- end bg -->
+    
+<script src="js/jquery-1.10.2.min.js"></script>
+<script>
+        jQuery(document).ready(function(){
+            
+            // page suivante
+            $('body').keydown(function (e) {
+                if (e.keyCode == 40) {
+                    window.location = '4.html';
+                }
+            });
+            
+            // page précédente
+            $('body').keydown(function (e) {
+                if (e.keyCode == 38) {
+                    window.location = '2.html';
+                }
+            });
+
+        });
+  </script>
+</body>
+</html>

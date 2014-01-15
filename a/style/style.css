@@ -1,0 +1,341 @@
+html, body {
+    width:100%;
+    height:100%;
+}
+
+#bg {
+    width:100%;
+    height:100%;
+    background-image:url(../img/interface/h-bk.png);
+    background-repeat:no-repeat;
+    background-color:rgba(30,45,59,1);
+    padding-top:80px;
+}
+
+main {
+    margin:0 auto;
+    padding:5px;
+    max-width:70%;
+    max-height:100%;
+    position:relative;
+    border:2px rgb(33,30,38) solid;
+    border-bottom:none;
+    z-index:1;
+} 
+
+footer {
+    position:fixed;
+    bottom:0;
+    height:30px;
+    width:100%;
+}
+
+#logo {
+    position:absolute;
+    height:30px;
+    right:15%;
+    bottom:0px;
+}
+
+#txt_footer {
+    position:absolute;
+    left:15%;
+    font-family:monospace;
+    color:#FFF;
+    font-size:10px;
+    line-height:30px;
+}
+
+/*Scène 1*/
+
+#general {
+    width:100%; 
+    height:auto; 
+}
+
+#lampe {
+    position:absolute;
+    top:0%;
+    left:-10%;
+    width:90%; 
+    height:90%; 
+    z-index:100;
+    -webkit-animation: beug 5s ease-in-out infinite normal;
+}
+
+#affiche {
+    position:absolute;
+    top:7%;
+    right:5%;
+    width:auto; 
+    height:20%;
+    z-index:100;
+    -webkit-animation: tangue 2s ease-in-out infinite alternate ;
+    -webkit-transform-origin:top;
+}
+
+#affiche:hover {
+    -webkit-animation-play-state:paused;
+}
+
+#echarpe {
+    position:absolute;
+    bottom:10%;
+    left:25%;
+    width:20%; 
+    height:20%; 
+    z-index:100;
+}
+
+#bijoutier {
+    position:absolute;
+    bottom:10px;
+    right:5%;
+    z-index:100;
+}
+
+#larme {
+    position:absolute;
+    right:25%;
+    bottom:25%;
+    -webkit-animation: larme 1s ease-in infinite normal;
+}
+
+#policier {
+    position:absolute;
+    bottom:9%;
+    left:12%;
+    width:auto; 
+    height:73%;
+    z-index:100;
+}
+
+.bulle_s1 {
+    position:absolute;
+    background-color:rgba(22,22,22,0.3);
+    color:white;
+    padding:5px;
+    min-width:100px;
+    max-width:300px;
+    font-family:monospace;
+    font-size:12px;
+    border-radius:10px;
+    z-index:102;
+    top:3%;
+}
+
+#texte {
+    position:absolute;
+    background-color:rgba(256,256,256,0.4);
+    width:98%;
+    padding:5px;
+    z-index:102;
+    font-family:monospace;
+    font-size:14px;
+    border-radius:10px;
+}
+
+/*Scène 2*/
+
+#ecran {
+    position:absolute;
+    top:40%;
+    right:10%;
+    width:30%; 
+    height:30%;
+    z-index:100;
+}
+
+#avis {
+    position:absolute;
+    top:40%;
+    right:10%;
+    width:30%; 
+    height:30%;
+    z-index:101;
+    transition:all .2s ease-in;
+    -webkit-animation: pulse 1S ease-in-out ;
+    -webkit-animation-delay:2s;
+    -webkit-animation-iteration-count: 5;
+}
+
+#avis:hover {
+    -webkit-transform:scale(1.02)
+}
+
+#photo_bijoutier {
+    position:absolute;
+    bottom:50%;
+    left:10%;
+    width:15%; 
+    height:15%;
+    transition:all .2s ease-in;
+}
+
+#photo_bijoutier:hover {
+    -webkit-transform:scale(1.05);
+}
+
+#photo_bijoutiere {
+    position:absolute;
+    left:10%;
+    bottom:30%;
+    width:15%;
+    height:15%;
+    transition:all .2s ease-in;
+}
+
+#photo_bijoutiere:hover {
+    -webkit-transform:scale(1.05);
+}
+
+#policier_s2 {
+    position:absolute;
+    bottom:23.5%;
+    left:32%;
+    width:30%;
+    height:41%;
+}
+
+.bulle_s2 {
+    position:absolute;
+    background-color:rgba(22,22,22,0.3);
+    color:white;
+    padding:5px;
+    min-width:100px;
+    max-width:300px;
+    font-family:monospace;
+    font-size:12px;
+    border-radius:10px;
+    z-index:102;
+    top:25%;
+    left:30%;
+}
+
+/*Scène 3*/
+
+#policier_s3 {
+    position:absolute;
+    width:40%;
+    height:60%;
+    bottom:1%;
+    left:21%
+}
+
+#bras {
+    position:absolute;
+    top:29.5%;
+    left:53%;
+    height:24%;
+}
+
+#bras:hover{
+    -webkit-transform-origin:bottom center;
+    -webkit-animation:tourne 2s ease-in-out infinite normal;
+}
+
+#accident {
+    text-indent:100000px;
+    position:absolute;
+    top:29.5%;
+    left:53%;
+    height:40px;
+    width:41px;
+    background:none;
+    z-index:120;
+}
+
+#wanted {
+    position:absolute;
+    height:30%;
+    right:5%;
+    top:22%;
+}
+
+#wanted:hover {
+    -webkit-transform-origin:top left;
+    -webkit-animation:balance 2s ease-out 1 normal;
+    -webkit-animation-fill-mode:forwards;
+}
+
+#breaking {
+    position:absolute;
+    width:17%;
+    bottom:25.5%;
+    left:3.5%;
+    padding-top:40px;
+    -webkit-animation:pulse 2s ease-out infinite normal;
+}
+
+.bulle_s3 {
+    position:absolute;
+    background-color:rgba(22,22,22,0.5);
+    color:white;
+    padding:5px;
+    min-width:100px;
+    max-width:300px;
+    font-family:monospace;
+    font-size:12px;
+    border-radius:10px;
+    z-index:102;
+    top:20%;
+    left:30%;
+}
+
+/*Scène 4*/
+
+#policier_s4{
+    position:absolute;
+    bottom:1.6%;
+    height:50%;
+    left:7%;
+    z-index:120;
+}
+
+#femme {
+    position:absolute;
+    -webkit-transform-origin:bottom left;
+    -webkit-transform:rotate(-10deg);
+    right:24.5%;
+    bottom:26.4%;
+    height:35%;
+    z-index:80;
+}
+
+#enfant {
+    position:absolute;
+    -webkit-transform-origin:bottom left;
+    -webkit-transform:rotate(-10deg);
+    left:30%;
+    bottom:20%;
+    height:35%;
+    z-index:80;
+}
+
+#tel {
+    position:absolute;
+    right:20%;
+    bottom:20%;
+    height:8%;
+    -webkit-animation:vibre 3s ease-out infinite normal;
+}
+
+#tel:hover {
+    -webkit-animation-play-state:paused;
+}
+
+#fumee {
+    position:absolute;
+    right:28%;
+    top:43%;
+    height:16%;
+    -webkit-animation:fumee 2s linear infinite normal;
+    z-index:60;
+}
+
+#foret {
+    position:absolute;
+    top:0;
+    width:99%;
+    z-index:50;
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site naratif">
+    <meta name="author" content="Alexandre Buruk, Guillaume Deschryver, Mikaël Haeck & Antoine Lagna">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="css/moments.css">
+    <title>Appel &agrave; risque | William - Homeless |</title>
+</head>
+<body>
+    
+   <main>
+       
+       
+       <section class="parallax-viewport" id="parallax">
+           
+           <div class="parallax-layer" style="width: 99%; height:100%;" >
+               <img src="img/m4/l-fond.svg"  alt="fond" />
+           </div>
+           
+           <div class="parallax-layer" style="width: 98%; height:100%;" >
+               <img src="img/m4/echarpe.svg"  alt="écharpe" />
+           </div>
+           
+           <div class="parallax-layer" style="width: 97%; height:100%;" >
+               <img src="img/m4/flic.svg"  alt="policier" />
+           </div>
+           
+           <div class="parallax-layer" style="width: 100%; height: 100%;">
+               <img src="img/m4/l-devant.svg" alt="william" />
+               <div id="bulle">phylactère</div>
+           </div>
+           
+          <div class="parallax-layer" style="width: 100%; height: 100%;">
+               <img src="img/m1/l-d.svg" alt="lumières" />
+           </div>
+         
+           <!-- lien Léo -->
+           <a href="#" id="leo_scar_link">écharpe de Léo</a>
+           <div class="bulle_leink">
+               <p>"Avant de s'enfuir après que je lui ai tiré dessus, le sdf a fait tombé cette écharpe par terre. Elle avait l'air trop petite pour lui..."</p>
+           </div>
+           
+           <!-- lien flic -->
+           <a href="#" id="flictravail_link">policer</a>
+           <div class="bulle_flictravail">
+               <p>"C'est l'officier en charge de l'affaire. Jones je crois. J'espère qu'il retrouvera mon collier."</p>
+           </div>
+           
+           <!-- lien kate -->
+           <a href="#" id="katetel_link">telephone</a>
+           <div class="bulle_katetel">
+               <p>"C'est en cours d'appel... A cette heure-ci, elle ne devrait pas tarder à quitter le travail."</p>
+           </div>
+           
+           <!-- lien william -->
+           <a href="william_5.html" id="willtel_link">telephone</a>
+           <div class="bulle_willtel">
+               <p>"Comment lui dire ? Cela risque d'être difficile..."</p>
+           </div>
+           
+       </section> <!-- end parallax-viewport -->
+       
+       
+       <section id="texte">
+           
+           <p>
+           Quelle histoire ! Je viens seulement d'être lâché par la police et les journalistes. J'ai dit tout ce que je savais. Il commence à se faire tard, il est grand temps d'appeler ma femme pour lui dire tout ce qui c'est passé et que je vais bien. Il manque un collier et... Et j'ai tiré sur un homme...
+          </p>
+       
+       </section> <!-- end texte -->
+                     
+       
+    </main>
+    
+    <footer id="page">
+        <ul id="list-2">
+            <li><a id="dwm" href="http://www.dwm.re" target="_blank">dwm</a></li>
+            <li> - Homeless</li>
+        </ul>
+    </footer>  
+        
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('#parallax .parallax-layer')
+            .parallax({
+                    mouseport: jQuery('#parallax')
+            });
+            
+            $("#texte").hide(0).delay(200).fadeIn(1000)
+            
+            // page suivante
+            $('body').keydown(function (e) {
+                if (e.keyCode == 40) {
+                    window.location = '5.html';
+                }
+            });
+            
+            // page précédente
+            $('body').keydown(function (e) {
+                if (e.keyCode == 38) {
+                    window.location = '3.html';
+                }
+            });
+
+        });
+  </script>
+
+</body>
+</html>

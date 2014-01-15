@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site naratif">
+    <meta name="author" content="Alexandre Buruk, Guillaume Deschryver, Mikaël Haeck & Antoine Lagna">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="css/moments.css">
+    <title>Le braquage | William - Homeless |</title>
+
+</head>
+<body>
+    
+    <main>
+       
+        <section class="parallax-viewport" id="parallax">
+               
+            <div class="parallax-layer" style="width: 99%; height:100%;" >
+                <img src="img/m2/l-back.svg"  alt="fond" />
+                <div id="leo_back">
+                        <img src="img/m2/leo.png" alt="leo" />
+                </div>
+               </div>
+                <div class="parallax-layer" style="width: 98%; height: 100%;">
+                    <img src="img/m2/l-bureau.svg" alt="bureau" />
+               </div>
+               <div class="parallax-layer" style="width: 100%; height: 100%;">
+                   <img src="img/m2/l-mur.svg" alt="mur de devant" /> 
+               </div>
+               <div class="parallax-layer" style="width: 100%; height: 100%;">
+                   <img src="img/m2/l-lamp.svg" alt="lampes" /> 
+               </div>
+               
+               <!-- lien William -->
+               <a href="william_3.html" id="william_alarm">William et l'alarme</a>
+               <div class="bulle_will_alarm"><p>"Tant qu'il ne remarque rien tout va bien ! Doucement..."</p></div>
+               
+               <!-- lien Jones -->
+               <a href="#" id="jones_alarm">l'alarme</a>
+               <div class="bulle_alarm"><p>"Espérons que la police arrivera vite !"</p></div>
+               
+               <!-- lien Kate -->
+               <a href="#" id="kate_poster">l'alarme</a>
+               <div class="bulle_poster"><p>"J'espère que ma femme va bien !"</p></div>
+               
+               <!-- lien Léo -->
+               <a href="#" id="leo_link">Léo</a>
+               <div class="bulle_leo"><p>"C'est qui ce gamin ?"</p></div>
+    
+           
+           </section> <!-- end parallax-viewport -->
+           
+           <section id="texte">
+               
+               <p>
+                J'ai rien vu venir ! J'aurais dû me méfier de ce type car il n'avait pas l'air commode ! J'ai prévenu la police avec mon système d'alarme. J'ai mon arme de poing pour me défendre, si jamais ça tourne mal ! Il ne faut surtout pas paniquer !
+              </p>
+           
+           </section> <!-- end texte -->
+                     
+      
+    </main>
+    
+    <footer id="page">
+           <ul id="list-2">
+               <li><a id="dwm" href="http://www.dwm.re" target="_blank">dwm</a></li>
+                <li> - Homeless</li>
+            </ul>
+    </footer>   
+        
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('#parallax .parallax-layer')
+            .parallax({
+                    mouseport: jQuery('#parallax')
+            });
+            
+            $("#texte").hide(0).delay(200).fadeIn(1000)
+            
+            // page suivante
+            $('body').keydown(function (e) {
+                if (e.keyCode == 40) {
+                    window.location = '3.html';
+                }
+            });
+            
+            // page précédente
+            $('body').keydown(function (e) {
+                if (e.keyCode == 38) {
+                    window.location = 'index.html';
+                }
+            });
+
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jones Moment 2 - Workshop DWMWKID</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/animation.css" />
+    
+</head>
+<body>
+    
+    <div id="bg">
+
+    <main>
+        
+        <img id="general" src="img/scene2/general.svg" alt="La scène représente l'officier Jones assi a son bureau dans le commissariat" />
+        
+        <img id="ecran" src="img/scene2/ecran.svg" alt="Ecran de télé." />
+        
+        <a href="#"><img id="avis" src="img/scene2/avis-de-recherche.svg" alt="Portrait robot du braqueur de la bijouterie Mr & Mrs Allen." /></a>
+        
+        <a href="#"><img id="photo_bijoutier" src="img/scene2/bijoutier.svg" alt="photo du bijoutier" /></a>
+        
+        <a href="#"><img id="photo_bijoutiere" src="img/scene2/bijoutiere.svg" alt="photo de la bijoutière" /></a>
+        
+        <a href="3.html"><img id="policier_s2" src="img/scene2/policier.svg" alt="Jones est assi a@ son bureau" /></a>
+        
+        <p class="bulle_s2">
+                "Sale affaire... Heureusement aucun civil n'a été blessé. Qui est ce SDF ? Où peut il bien être ? J'èspère le coincer."
+        </p>
+        
+    </main>
+        
+        <footer>
+            
+            <p id="txt_footer">Homeless</p>
+        
+            <a href="www.dwm.re"><img id="logo" src="img/interface/logo-dwm-white.svg"></a>
+            
+        </footer>
+        
+    </div><!-- end bg -->
+    
+<script src="js/jquery-1.10.2.min.js"></script>
+<script>
+        jQuery(document).ready(function(){
+            
+            // page suivante
+            $('body').keydown(function (e) {
+                if (e.keyCode == 40) {
+                    window.location = '3.html';
+                }
+            });
+            
+            // page précédente
+            $('body').keydown(function (e) {
+                if (e.keyCode == 38) {
+                    window.location = 'index.html';
+                }
+            });
+
+        });
+  </script>
+</body>
+</html>

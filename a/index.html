@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jones Moment 1 - Workshop DWMWKID</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/animation.css">
+
+    
+</head>
+<body>
+    
+    <div id="bg">
+    
+    <main>
+    
+        <img id="general" src="img/scene1/general.svg" alt="Un bijoutier est assi, le tête entre les mains, sur le sol de sa bijouterie." />
+          
+        <img id="lampe" src="img/scene1/lampe.svg" alt="Eclairage partiel de la pièce grace a un spot." />
+          
+        <a href="#"><img id="affiche" src="img/scene1/affiche.svg" alt="Affiche représentant les employé de la bijouterie. Ici la femme du bijoutier." /></a>
+            
+        <a href="#"><img id="echarpe" src="img/scene1/echarpe.svg" alt="Echarpe rouge appartenant au combrioleur." /></a>
+        
+        <a href="#"><img id="bijoutier" src="img/scene1/bijoutier.svg" alt="Le bijoutier est assi, la tête entre ses mains, sur le sol de sa bijouterie." width="40%" height="40%" /></a>
+               
+        <img id="larme" src="img/scene1/larme.svg" alt="Larme1 du bijoutier." />
+               
+        <a href="2.html"><img id="policier" src="img/scene1/policier.svg" alt="Le policier entre dans la pièce pour prendre la déposition du bijoutier." /></a>
+        
+            <p class="bulle_s1">
+                "En face de moi il ne reste que se pauvre bijoutier désemparé qui as perdu le contrôle et a tirer sur le cambrioleur. D'après lui ce serait un SDF."
+            </p>
+        
+        <div id="texte">
+            <p>
+                1030 en cours... La bijouterie des Allen se fait braquer. Je me rend sur place le plus rapidement possible mais le malfaiteur est déjà parti.
+            </p>
+            
+        </div>
+        
+    </main>
+    <footer>
+        
+        <p id="txt_footer">Homeless</p>
+    
+        <a href="www.dwm.re"><img id="logo" src="img/interface/logo-dwm-white.svg"></a>
+        
+    </footer>
+    </div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script>
+        jQuery(document).ready(function(){
+            
+            // page suivante
+            $('body').keydown(function (e) {
+                if (e.keyCode == 40) {
+                    window.location = '2.html';
+                }
+            });
+            
+            // page précédente
+            $('body').keydown(function (e) {
+                if (e.keyCode == 38) {
+                    window.location = '../index.html';
+                }
+            });
+
+        });
+  </script>
+</body>
+</html>

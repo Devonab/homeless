@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="1920px" height="1080px" viewBox="-180.279 0.497 1920 1080"
+	 overflow="visible" enable-background="new -180.279 0.497 1920 1080" xml:space="preserve">
+<defs>
+</defs>
+<path fill="#BAB5B5" stroke="#564F4F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M190.219,911.164c0,0,102.155-908.664,384.604-908.664h561.053v951.77L190.219,911.164"/>
+<path fill="#A09A9A" d="M540.661,725.694c0,0,599.164-408.065,599.164-591.648s209.809,341.901,209.809,341.901l-76.66,311.456
+	c0,0-619.633,20.451-630.581,20.451S540.661,725.694,540.661,725.694z"/>
+<rect x="463.689" y="89.022" fill="#CEC2C2" width="253.089" height="334.123"/>
+<rect x="488.299" y="165.356" opacity="0.82" fill="#9B9B97" width="22.603" height="203.867"/>
+<rect x="488.299" y="113.918" opacity="0.82" fill="#9B9B97" width="203.869" height="22.603"/>
+<rect x="528.522" y="381.053" opacity="0.82" fill="#9B9B97" width="123.423" height="11.301"/>
+<rect x="562.717" y="397.087" opacity="0.82" fill="#9B9B97" width="98.242" height="11.301"/>
+<circle fill="#DDDDDB" cx="592.308" cy="202.607" r="47.825"/>
+<path fill="#DDDDDB" d="M636.692,346.451c0,8.913-7.227,16.14-16.14,16.14h-56.49c-8.914,0-16.14-7.227-16.14-16.14v-85.446
+	c0-8.914,7.226-16.14,16.14-16.14h56.49c8.914,0,16.14,7.226,16.14,16.14V346.451z"/>
+<path opacity="0.33" fill="#B2AAAA" d="M716.778,89.022h-68.35c69.57,51.287-184.739,334.123-184.739,334.123h253.089V89.022z"/>
+<g>
+	<polygon fill="#C4BFBF" points="3.976,1076.994 283,831.543 1557.942,831.543 1557.942,1076.994 	"/>
+	<path fill="#564F4F" d="M1556.442,833.043v242.451H7.953l275.614-242.451H1556.442 M1559.442,830.043H282.435L0,1078.494h1559.442
+		V830.043L1559.442,830.043z"/>
+</g>
+</svg>
