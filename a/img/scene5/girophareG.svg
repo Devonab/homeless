@@ -234,7 +234,7 @@
 </g>
 <g id="Calque_9">
 	
-		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-205" y1="589.9414" x2="707.3398" y2="589.9414" gradientTransform="matrix(1 0 0 1 205 -418)">
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-205" y1="589.9414" x2="707.3398" y2="589.9414" gradientTransform="matrix(-1 0 0 1 707.3398 -418)">
 		<stop  offset="0.0056" style="stop-color:#005B96"/>
 		<stop  offset="0.1348" style="stop-color:#0075BD"/>
 		<stop  offset="0.4326" style="stop-color:#1E9BD6"/>
@@ -244,6 +244,6 @@
 		<stop  offset="0.9357" style="stop-color:#C2DBF1;stop-opacity:0.8"/>
 		<stop  offset="1" style="stop-color:#CBDFF3;stop-opacity:0"/>
 	</linearGradient>
-	<polygon opacity="0.4" fill="url(#SVGID_3_)" enable-background="new    " points="0,46.085 912.34,3.883 912.34,340 0.34,69 	"/>
+	<polygon opacity="0.4" fill="url(#SVGID_3_)" enable-background="new    " points="912,69 0,340 0,3.883 912.34,46.085 	"/>
 </g>
 </svg>
