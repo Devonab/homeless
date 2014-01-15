@@ -247,6 +247,12 @@ footer #dwm {
     bottom: 0;
 }
 
+.style_cred_propos main { 
+    text-align: left;
+    width: 50%; 
+    margin: auto;
+}
+
 /*  --------------  */
 /*       TYPO       */
 /*  --------------  */
@@ -270,6 +276,13 @@ header h1 {
 
 main { text-align: center; padding: 20px;}
 
+.style_cred_propos h1 {
+    text-align: center;
+    font-family: 'maven_promedium';
+    font-size: 22px;
+    margin: 10px 0;
+}
+
 main h2 {
     font-size: 18px;
     margin-top: 50px;
@@ -281,9 +294,20 @@ main h3 {
     margin-bottom: 10px;
 }
 
+.style_cred_propos p { 
+    font-family: 'maven_proregular', sans-serif;
+    margin: 15px 0;
+    line-height: 1.5; 
+    font-size: 16px; 
+}
 footer p { color: #009FE3; }
 
 #list-2 a { text-transform: none; }
+
+.current {
+    text-decoration: underline;
+    color: #025274;
+}
 
 /*  --------------  */
 /*  MEDIA QUIERIES  */

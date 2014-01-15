@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html>
-	
 	<head>
-	
 		<meta charset="UTF-8"/>
 		<title>Homeless-Léo-Moment 4</title>
+		<link rel="shortcut icon" href="../img/favicon.ico">
+		<link rel="shortcut icon" href="../img/favicon.png">
 		<link rel="stylesheet" href="style/reset.css"/>
 		<link rel="stylesheet" href="style/style.css"/>
 		<meta name="viewport" content="width-device-height, initial scale=1.0">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	
 	</head>
-	
 		<body class="background">
-		<div class="container-p4">
-
-
-							
-							<a href="#"><div id="conductrice"></div></a>
-							<audio id="beep-two" controls="controls" preload="auto">
-					        <source src="sounds/dial.mp3"/>
-					        <source src="sounds/dial.ogg"/>
-					      
-					      </audio>
-
-					      <a href="#"><img id="tel" src="img/ecran-tel.png" alt="panneau-pub-police"></a>
-					      <script>var beep = $("#beep-two")[0];
+			<div class="container-p4">				
+				<a href="../c/5.html"><div id="conductrice"></div></a>
+				<audio id="beep-two" controls="controls" preload="auto">
+					<source src="sounds/dial.mp3"/>
+					<source src="sounds/dial.ogg"/>   
+				</audio>
+				<a href="../a/4.html"><img id="tel" src="img/ecran-tel.png" alt="ecran du téléphone"></a>
+				<script>var beep = $("#beep-two")[0];
 					$("#tel")
 					  .mouseenter(function() {
-					    beep.play();
-					     
+					    beep.play();	     
 					  });
 					  $("#tel")
 					  .mouseleave(function() {
 					    beep.pause();
 					    beep.currentTime = 0; 
-					  });</script>
-							<a href="#"><div id="bijou2"></div></a>
-							<div id="sprite-barre"></div>
-<p id="texte-p4">Je jouais et une voiture est arrivée et a fait un accident contre un arbre. Papa a couru vers moi, je crois qu'il a eu peur. Il est allé vers la voiture, puis s'est dirigé vers moi, m'as pris la main, il m'a dit des mots gentils et m'a ensuite attaché dans la voiture.. pourquoi papa ?</p>
-		</div><!-- End container -->
-			<footer class="footer"><a href="http://www.dwm.re"><img  class="logo-dwm" src="img/dwm-logo.svg" alt="Logo DWM"></a><a class="homeless" href="#">Homeless</a></footer>
+					  });
+				</script>
+				<a href="../b/5.html"><div id="bijou2"></div></a>
+				<div id="sprite-barre"></div>
+				<div id="cadre-p4"><p id="texte-p4">Je jouais et une voiture est arrivée et a fait un accident contre un arbre. Papa a couru vers moi, je crois qu'il a eu peur. Il est allé vers la voiture, puis s'est dirigé vers moi, m'as pris la main, il m'a dit des mots gentils et m'a ensuite attaché dans la voiture.. pourquoi papa ?</p></div>
+			</div><!-- End container -->
+			<footer class="footer"><a href="http://www.dwm.re"><img  class="logo-dwm" src="img/dwm-logo.svg" alt="Logo DWM"></a><a class="homeless" href="../index.html">Homeless</a></footer>
+			<script src="js/jquery-1.10.2.min.js"></script>
+				<script>
+				        jQuery(document).ready(function(){
+				            // page suivante
+				            $('body').keydown(function (e) {
+				                if (e.keyCode == 40) {
+				                    window.location = '5.html';
+				                }
+				            });
+				            // page précédente
+				            $('body').keydown(function (e) {
+				                if (e.keyCode == 38) {
+				                    window.location = '3.html';
+				                }
+				            });
+				        });
+				  </script>
 		</body>	
-
-
-
-
-
-
 </html>

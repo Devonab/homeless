@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html>
-	
 	<head>
-	
 		<meta charset="UTF-8"/>
 		<title>Homeless-Léo-Moment 5</title>
+		<link rel="shortcut icon" href="../img/favicon.ico">
+		<link rel="shortcut icon" href="../img/favicon.png">
 		<link rel="stylesheet" href="style/reset.css"/>
 		<link rel="stylesheet" href="style/style.css"/>
 		<meta name="viewport" content="width-device-height, initial scale=1.0">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	
 	</head>
-	
 		<body class="background">
-		<div class="container-p5">
-
-
-
-							<audio id="beep-two" controls="controls" preload="auto">
-					        <source src="sounds/sac-zip.mp3"/>
-					        <source src="sounds/sac-zip.ogg"/>
-					      
-					      </audio>
-
-					      <a href="#"><img id="cadavre" src="img/cadavre.png" alt="panneau-pub-police"></a>
-					      <script>var beep = $("#beep-two")[0];
+			<div class="container-p5">
+				<audio id="beep-two" controls="controls" preload="auto">
+					<source src="sounds/sac-zip.mp3"/>
+					 <source src="sounds/sac-zip.ogg"/>    
+				</audio>
+				<a href="../c/1.html"><img id="cadavre" src="img/cadavre.png" alt="cadavre de la conductrice"></a>
+				<script>var beep = $("#beep-two")[0];
 					$("#cadavre")
 					  .mouseenter(function() {
-					    beep.play();
-					     
+					    beep.play();	     
 					  });
 					  $("#cadavre")
 					  .mouseleave(function() {
 					    beep.pause();
 					    beep.currentTime = 0; 
-					  });</script>
-							<a href="#"><div id="bijou3"></div></a>
-							<a id="flic" href="#"></a>
-<p id="texte-p5">Un policier est venu me chercher et m'a déposé dans une ambulance. Je l'ai vu regarder mon collier avec beaucoup d'attention. Puis il a dit que tout irait bien pour moi et qu'on s'occuperait de moi. Mais il n'a pas parlé de mon papa...</p>
-
-		</div><!-- End container -->
-			<footer class="footer"><a href="http://www.dwm.re"><img  class="logo-dwm" src="img/dwm-logo.svg" alt="Logo DWM"></a><a class="homeless" href="#">Homeless</a></footer>
+					  });
+				</script>
+				<a href="../b/5.html"><div id="bijou3"></div></a>
+				<a id="flic" href="../a/5.html"></a>
+				<div id="cadre-p5"><p id="texte-p5">Un policier est venu me chercher et m'a déposé dans une ambulance. Je l'ai vu regarder mon collier avec beaucoup d'attention.Il a dit que tout irait bien pour moi. Mais il n'a pas parlé de mon papa...</p></div>
+			</div><!-- End container -->
+			<footer class="footer"><a href="http://www.dwm.re"><img  class="logo-dwm" src="img/dwm-logo.svg" alt="Logo DWM"></a><a class="homeless" href="../index.html">Homeless</a></footer>
+			<script src="js/jquery-1.10.2.min.js"></script>
+				<script>
+				        jQuery(document).ready(function(){
+				            // page suivante
+				            $('body').keydown(function (e) {
+				                if (e.keyCode == 40) {
+				                    window.location = '../index.html';
+				                }
+				            });
+				            // page précédente
+				            $('body').keydown(function (e) {
+				                if (e.keyCode == 38) {
+				                    window.location = '4.html';
+				                }
+				            });
+				        });
+				  </script>
 		</body>	
-
-
-
-
-
-
 </html>
