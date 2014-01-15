@@ -8,83 +8,31 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="css/moments.css">
     <title>Le coup fatal | William - Homeless |</title>
-    <style>
-        body { overflow: hidden;} 
-        main { padding: 0; margin: 0; text-align: left;}
-      
-        @-webkit-keyframes sections {
-            from { -webkit-transform: translateY(-768px); }
-            to { -webkit-transform: translateY(768px); }
-        }
-        @-webkit-keyframes weapon {
-            0% { -webkit-transform: rotate(0deg); }
-            70% { -webkit-transform: rotate(0deg); }
-            75% { -webkit-transform: translateX(100px) rotate(23deg); }
-            100% { -webkit-transform: translateX(0px) rotate(0deg);}
-        }
-        @-webkit-keyframes muzzle {
-            0% { -webkit-opacity: 0; }
-            50% { -webkit-opacity: 1;}
-            100% { -webkit-opacity: 0; }
-        }
-        #gauche, #droite, #milieu {
-            position: relative;
-            top: -768px;
-            margin: 0 -5px;
-            height: 768px;
-            overflow: hidden;
-            width:calc(100% / 3);
-            display:inline-block;
-            border: 5px solid #000;
-        }
-        
-        #gauche {
-            background: url(img/m3/gauche.svg) no-repeat;
-            background-size: cover;
-            
-            -webkit-animation: sections 1s linear forwards;
-        }
-        
-        #milieu {
-            background: url(img/m3/milieu.svg) no-repeat;
-            background-size: cover;
-            
-            -webkit-animation: sections 2s linear forwards;
-        
-        }
-        #droite {
-            width: 32.3%;
-            background: url(img/m3/droite.svg) no-repeat;
-            background-size: cover;
-            
-            -webkit-animation: sections 3s linear forwards;
-        }
-        #texte { position: fixed; bottom: 0; }
-        
-        #weapon {
-            width: 300px;
-            height: 330px;
-            position: absolute;
-            text-indent: -9999px;
-            left: 130px;
-            top: 200px;
-            background: url(img/m3/weapon.svg) no-repeat;
-            
-            -webkit-animation: weapon 4s linear forwards;
-        }
-        
-    </style>
 </head>
-<body>
+<body id="moment3">
     
-    <main>
-            
-        <section id="gauche"></section>
-        <section id="milieu">
-            <div id="weapon">arme</div>
+    <main> 
+
+        <section id="gauche">
+            <a href="../a/index.html" id="lien_camerafx">lien vers Jones</a>
+            <div id="camerafx">
+                <h1><span></span>rec</h1>
+            </div>
         </section>
-        <section id="droite"></section>
-           
+        
+        <section id="milieu">
+            <a href="../c/2.html" id="kate_3">lien kate</a>
+            <div id="kate_aff">affiche kate</div>
+            <div id="muzzle">muzzle</div>
+            <div id="weapon">arme</div>
+            <a href="../b/4.html" id="william_arme">lien william</a>
+
+        </section>
+        
+        <section id="droite">
+            <a href="../d/2.html" id="leo_lien_main">lien Léo</a>
+            <div id="leo_main">main de Léo</div>
+        </section>  
            <section id="texte">
                
                <p>
@@ -92,14 +40,14 @@
               </p>
            
            </section> <!-- end texte -->
-                     
+
       
     </main>
     
     <footer id="page">
            <ul id="list-2">
                <li><a id="dwm" href="http://www.dwm.re" target="_blank">dwm</a></li>
-                <li> - Homeless</li>
+                <li> - <a href="../index.html">Homeless</a></li>
             </ul>
     </footer>   
         

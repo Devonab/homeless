@@ -281,6 +281,10 @@ main h3 {
     margin-bottom: 10px;
 }
 
+footer p { color: #009FE3; }
+
+#list-2 a { text-transform: none; }
+
 /*  --------------  */
 /*  MEDIA QUIERIES  */
 /*  --------------  */
