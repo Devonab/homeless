@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	
+		<meta charset="UTF-8"/>
+		<title>Homeless-Léo-Moment 4</title>
+		<link rel="stylesheet" href="style/reset.css"/>
+		<link rel="stylesheet" href="style/style.css"/>
+		<meta name="viewport" content="width-device-height, initial scale=1.0">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	
+	</head>
+	
+		<body class="background">
+		<div class="container-p4">
+
+
+							
+							<a href="#"><div id="conductrice"></div></a>
+							<audio id="beep-two" controls="controls" preload="auto">
+					        <source src="sounds/dial.mp3"/>
+					        <source src="sounds/dial.ogg"/>
+					      
+					      </audio>
+
+					      <a href="#"><img id="tel" src="img/ecran-tel.png" alt="panneau-pub-police"></a>
+					      <script>var beep = $("#beep-two")[0];
+					$("#tel")
+					  .mouseenter(function() {
+					    beep.play();
+					     
+					  });
+					  $("#tel")
+					  .mouseleave(function() {
+					    beep.pause();
+					    beep.currentTime = 0; 
+					  });</script>
+							<a href="#"><div id="bijou2"></div></a>
+							<div id="sprite-barre"></div>
+<p id="texte-p4">Je jouais et une voiture est arrivée et a fait un accident contre un arbre. Papa a couru vers moi, je crois qu'il a eu peur. Il est allé vers la voiture, puis s'est dirigé vers moi, m'as pris la main, il m'a dit des mots gentils et m'a ensuite attaché dans la voiture.. pourquoi papa ?</p>
+		</div><!-- End container -->
+			<footer class="footer"><a href="http://www.dwm.re"><img  class="logo-dwm" src="img/dwm-logo.svg" alt="Logo DWM"></a><a class="homeless" href="#">Homeless</a></footer>
+		</body>	
+
+
+
+
+
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	
+		<meta charset="UTF-8"/>
+		<title>Homeless-Léo-Moment 1</title>
+		<link rel="stylesheet" href="style/reset.css"/>
+		<link rel="stylesheet" href="style/style.css"/>
+		<meta name="viewport" content="width-device-height, initial scale=1.0">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		
+
+	
+	</head>
+	
+		<body class="background">
+		<div class="container-index">
+
+							<a href="#" id="lien_cam">
+								<div id="camera"></div>
+							</a>
+							<audio id="beep-two" controls="controls" preload="auto">
+					        <source src="sounds/femme-chantonne.mp3"/>
+					        <source src="sounds/femme-chantonne.ogg"/>
+					      
+					      </audio>
+
+					      <a href="#"><img id="femme" src="img/femme.png" alt="panneau-pub-police"></a>
+					      <script>var beep = $("#beep-two")[0];
+					$("#femme")
+					  .mouseenter(function() {
+					    beep.play();
+					     
+					  });
+					  $("#femme")
+					  .mouseleave(function() {
+					    beep.pause();
+					    beep.currentTime = 0; 
+					  });</script>
+
+							<a href="#">
+								<div id="porte1"></div>
+							</a>
+							<div id="music-note1"></div>
+							<div id="music-note2"></div>
+							<p id="texte-index">Ce matin papa ne va pas bien. Il ne sourit pas et ne parle pas beaucoup. On est en face d'un magasin et papa n'arrête pas de le regarder. Je ne comprends pas pourquoi...</p>
+		</div><!-- End container -->
+
+			<footer class="footer"><a href="http://www.dwm.re"><img  class="logo-dwm" src="img/dwm-logo.svg" alt="Logo DWM"></a><a class="homeless" href="#">Homeless</a></footer>
+		</body>	
+
+
+
+
+
+
+</html>

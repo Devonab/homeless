@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	
+		<meta charset="UTF-8"/>
+		<title>Homeless-Léo-Moment 3 </title>
+		<link rel="stylesheet" href="style/reset.css"/>
+		<link rel="stylesheet" href="style/style.css"/>
+		<meta name="viewport" content="width-device-height, initial scale=1.0">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	
+	</head>
+	
+		<body class="background">
+		<div class="container-p3">
+
+
+							
+							<audio id="beep-one" controls="controls" preload="auto">
+					        <source src="sounds/police-sound.mp3"/>
+					        <source src="sounds/police-sound.ogg"/>
+					      
+					      </audio>
+					     
+					    <a href="#"><img id="police" src="img/panneau.png" alt="panneau-pub-police"></a><p id="texte-panneau">Un metier, une passion, un avenir.</p>
+					    <script>var beepOne = $("#beep-one")[0];
+					$("#police")
+					  .mouseenter(function() {
+					    beepOne.play();
+					  });
+					  $("#police")
+					  .mouseleave(function() {
+					    beepOne.pause();
+					    beepOne.currentTime = 0; 
+					  });</script>
+
+
+<audio id="beep-two" controls="controls" preload="auto">
+					        <source src="sounds/voiture-qui-roule.mp3"/>
+					        <source src="sounds/voiture-qui-roule.ogg"/>
+					      
+					      </audio>
+
+					      <a href="#"><img id="voiture" src="img/voiture.png" alt="panneau-pub-police"></a>
+					      <script>var beep = $("#beep-two")[0];
+					$("#voiture")
+					  .mouseenter(function() {
+					    beep.play();
+					  });
+					  $("#voiture")
+					  .mouseleave(function() {
+					    beep.pause();
+					    beep.currentTime = 0; 
+					  });</script>
+  
+  	<a href="#"><div id="bijou"></div></a>
+ <p id="texte-p3">Papa ne va toujours pas bien, il saigne beaucoup et il dit qu'il est fatigué, qu'il va faire une sieste. Pendant qu'il fait dodo, je vais jouer avec le nouveau collier que papa m'a donné. </p>
+		</div><!-- End container -->
+			<footer class="footer"><a href="http://www.dwm.re"><img  class="logo-dwm" src="img/dwm-logo.svg" alt="Logo DWM"></a><a class="homeless" href="#">Homeless</a></footer>
+		</body>	
+
+
+
+
+
+
+</html>

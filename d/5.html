@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	
+		<meta charset="UTF-8"/>
+		<title>Homeless-Léo-Moment 5</title>
+		<link rel="stylesheet" href="style/reset.css"/>
+		<link rel="stylesheet" href="style/style.css"/>
+		<meta name="viewport" content="width-device-height, initial scale=1.0">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	
+	</head>
+	
+		<body class="background">
+		<div class="container-p5">
+
+
+
+							<audio id="beep-two" controls="controls" preload="auto">
+					        <source src="sounds/sac-zip.mp3"/>
+					        <source src="sounds/sac-zip.ogg"/>
+					      
+					      </audio>
+
+					      <a href="#"><img id="cadavre" src="img/cadavre.png" alt="panneau-pub-police"></a>
+					      <script>var beep = $("#beep-two")[0];
+					$("#cadavre")
+					  .mouseenter(function() {
+					    beep.play();
+					     
+					  });
+					  $("#cadavre")
+					  .mouseleave(function() {
+					    beep.pause();
+					    beep.currentTime = 0; 
+					  });</script>
+							<a href="#"><div id="bijou3"></div></a>
+							<a id="flic" href="#"></a>
+<p id="texte-p5">Un policier est venu me chercher et m'a déposé dans une ambulance. Je l'ai vu regarder mon collier avec beaucoup d'attention. Puis il a dit que tout irait bien pour moi et qu'on s'occuperait de moi. Mais il n'a pas parlé de mon papa...</p>
+
+		</div><!-- End container -->
+			<footer class="footer"><a href="http://www.dwm.re"><img  class="logo-dwm" src="img/dwm-logo.svg" alt="Logo DWM"></a><a class="homeless" href="#">Homeless</a></footer>
+		</body>	
+
+
+
+
+
+
+</html>

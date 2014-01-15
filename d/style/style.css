@@ -1,0 +1,851 @@
+/*---------------------------------------------------------------------------------------------------------Font Face*/
+@font-face {
+    font-family: 'bpmonobold';
+    src: url('../fonts/BPmonoBold-webfont.eot');
+    src: url('../fonts/BPmonoBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BPmonoBold-webfont.woff') format('woff'),
+         url('../fonts/BPmonoBold-webfont.ttf') format('truetype'),
+         url('../fonts/BPmonoBold-webfont.svg#bpmonobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dinregular';
+    src: url('../fonts/din-webfont.eot');
+    src: url('../fonts/din-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din-webfont.woff') format('woff'),
+         url('../fonts/din-webfont.ttf') format('truetype'),
+         url('../fonts/din-webfont.svg#dinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*--------------------------------------------------------------------------------------------------------- end Font Face*/
+/*---------------------------------------------------------------------------------------------------------Structure*/
+body,html
+{
+  width: 1024px;
+  height: 768px;
+}
+.container-index {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  background: url(../img/moment1.png) no-repeat center center;
+  -webkit-box-shadow: 0px 0px 20px #555;
+  -moz-box-shadow: 0px 0px 20px #555;
+  -o-box-shadow: 0px 0px 20px #555;
+  -ms-box-shadow: 0px 0px 20px #555;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=12);
+  zoom: 1; /* Pour ce couillon d'IE et ses versions antérieures à la 9 */
+  }
+.container-p2{
+  width: 1024px;
+  height: 768px;
+  background: url(../img/moment2.png) no-repeat center center;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 20px #555;
+  -moz-box-shadow: 0px 0px 20px #555;
+  -o-box-shadow: 0px 0px 20px #555;
+  -ms-box-shadow: 0px 0px 20px #555;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=12);
+  zoom: 1; /* Pour ce couillon d'IE et ses versions antérieures à la 9 */
+}
+.container-p3 {
+  width: 1024px;
+  height: 768px;
+  background: url(../img/moment3.png) no-repeat center center;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 20px #555;
+  -moz-box-shadow: 0px 0px 20px #555;
+  -o-box-shadow: 0px 0px 20px #555;
+  -ms-box-shadow: 0px 0px 20px #555;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=12);
+  zoom: 1; /* Pour ce couillon d'IE et ses versions antérieures à la 9 */
+}
+.container-p4 {
+  width: 1024px;
+  height: 768px;
+  background: url(../img/moment4.png) no-repeat center center;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 20px #555;
+  -moz-box-shadow: 0px 0px 20px #555;
+  -o-box-shadow: 0px 0px 20px #555;
+  -ms-box-shadow: 0px 0px 20px #555;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=12);
+  zoom: 1; /* Pour ce couillon d'IE et ses versions antérieures à la 9 */
+}
+.container-p5 {
+  width: 1024px;
+  height: 768px;
+  background: url(../img/moment5.png) no-repeat center center;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 20px #555;
+  -moz-box-shadow: 0px 0px 20px #555;
+  -o-box-shadow: 0px 0px 20px #555;
+  -ms-box-shadow: 0px 0px 20px #555;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=12);
+  zoom: 1; /* Pour ce couillon d'IE et ses versions antérieures à la 9 */
+}
+audio
+{
+  display: none;
+}
+a
+{
+  display: block;
+  width: 0px;
+  height: 0px;
+  text-decoration: none;
+}
+#flic
+{
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background: transparent;
+  position: relative;
+  top: 430px;
+  left: 510px;
+}
+
+.footer
+{
+  width: 100%;
+  height: 40px;
+  background: #1F2026;
+  opacity: 0.9;
+  position: relative;
+  top: -40px;
+}
+.homeless
+{
+  position: absolute;
+  left: 52%;
+  top: 30%;
+  display: block;
+  color: white;
+  font-family: "dinregular"
+
+}
+.logo-dwm
+{
+  width:53px; 
+  height:40px;
+  position: absolute;
+  left: 45%;
+}
+#texte-index
+{
+color: white;
+  font-family: "dinregular";
+ background: #1F2026;
+  opacity: 0.8;
+width: 1024px;
+height: 80px;
+position: relative;
+top: 608px;
+}
+#texte-p2
+{
+color: white;
+  font-family: "dinregular";
+ background: #1F2026;
+  opacity: 0.8;
+width: 1024px;
+height: 80px;
+position: relative;
+top: 648px;
+z-index: 1111111;
+}
+#texte-p3
+{
+color: white;
+  font-family: "dinregular";
+ background: #1F2026;
+  opacity: 0.8;
+width: 1024px;
+height: 80px;
+position: relative;
+top: 600px;
+}
+#texte-p4
+{
+color: white;
+  font-family: "dinregular";
+ background: #1F2026;
+  opacity: 0.8;
+width: 1024px;
+height: 80px;
+position: relative;
+top: 598px;
+}
+#texte-p5
+{
+color: white;
+  font-family: "dinregular";
+ background: #1F2026;
+  opacity: 0.8;
+width: 1024px;
+height: 80px;
+position: relative;
+top: 498px;
+}
+/*---------------------------------------------------------------------------------------------------------End Structure*/
+/*---------------------------------------------------------------------------------------------------------Illus*/
+#camera
+{
+  background-image: url(../img/camera.png);
+  z-index: 100000;
+  width: 52px;
+  height: 50px;
+  position: relative;
+  top: 60px;
+  left: 320px;
+  -webkit-animation: camera-animation 5s infinite linear;
+  -webkit-transform-origin: left bottom;
+  -moz-animation: camera-animation 5s infinite linear;
+  -moz-transform-origin: left bottom;
+  -o-animation: camera-animation 5s infinite linear;
+  -o-transform-origin: left bottom;
+  -ms-animation: camera-animation 5s infinite linear;
+  -ms-transform-origin: left bottom;
+}
+#camera2
+{
+  background-image: url(../img/camera.png);
+  z-index: 100000;
+  width: 52px;
+  height: 50px;
+  position: relative;
+  top: 200px;
+  left: 100px;
+  -webkit-animation: camera-animation 5s infinite linear;
+  -webkit-transform-origin: left bottom;
+  -moz-animation: camera-animation 5s infinite linear;
+  -moz-transform-origin: left bottom;
+  -o-animation: camera-animation 5s infinite linear;
+  -o-transform-origin: left bottom;
+  -ms-animation: camera-animation 5s infinite linear;
+  -ms-transform-origin: left bottom;
+}
+#femme
+{
+  z-index: 100000;
+  width: 109px;
+  height: 228px;
+  position: relative;
+  top: 260px;
+  left: 650px;
+}
+#porte1
+{
+  background-image: url(../img/porte1.png);
+  z-index: 100000;
+  width: 125px;
+  height: 277px;
+  position: relative;
+  top: 150px;
+  left: 500px;
+  -webkit-animation: glow_porte1 1.5s infinite alternate;
+  -moz-animation: glow_porte1 1.5s infinite alternate;
+  -o-animation: glow_porte1 1.5s infinite alternate;
+  -ms-animation: glow_porte1 1.5s infinite alternate;
+}
+#porte2
+{
+  background-image: url(../img/porte2.png);
+  z-index: 100000;
+  width: 208px;
+  height: 342px;
+  position: relative;
+  top: 351px;
+  left: 429px;
+  -webkit-animation: glow_porte1 1.5s infinite alternate;
+  -moz-animation: glow_porte1 1.5s infinite alternate;
+  -o-animation: glow_porte1 1.5s infinite alternate;
+  -ms-animation: glow_porte1 1.5s infinite alternate;
+}
+#enseigne
+{
+  background-image: url(../img/enseigne.png);
+  z-index: 100000;
+  width: 326px;
+  height: 165px;
+  position: relative;
+  top: 20px;
+  left: 380px;
+  -webkit-animation: glow 1.5s infinite alternate;
+  -moz-animation: glow 1.5s infinite alternate;
+  -o-animation: glow 1.5s infinite alternate;
+  -ms-animation: glow 1.5s infinite alternate;
+}
+#enseigne:hover, #bijou:hover, #camera:hover, #camera2:hover, #bijou3:hover
+{
+-webkit-animation-play-state:paused;
+-moz-animation-play-state:paused;
+-o-animation-play-state:paused;
+-ms-animation-play-state:paused;
+}
+#police
+{
+  z-index: 10000;
+  width: 280px;
+  height: 196px;
+  position: relative;
+  top: 280px;
+  left: 390px;
+}
+#texte-panneau
+{
+  position: relative;
+  left: 530px;
+  top: 310px;
+  width: 130px;
+  z-index: 100000;
+  font-family: 'bpmonobold';
+
+}
+#voiture
+{
+  z-index: 100000;
+  width: 41px;
+  height: 35px;
+  position: relative;
+  left: 642px;
+  top: -53px;
+}
+
+#voiture:hover
+{
+  background-image: url(../img/voiture.png);
+  z-index: 100000;
+  width: 41px;
+  height: 35px;
+  position: relative;
+  -webkit-animation: voiture-animation 4s 1 linear;
+  -moz-animation: voiture-animation 4s 1 linear;
+  -o-animation: voiture-animation 4s 1 linear;
+  -ms-animation: voiture-animation 4s 1 linear;
+}
+
+#tel
+{
+  background-image: url(../img/ecran-tel.png);
+  z-index: 100000;
+  position: relative;
+  left: 812px;
+  top: 650px;
+}
+#bijou
+{
+  background-image: url(../img/bijou.png);
+  z-index: 100000;
+  width: 41px;
+  height: 52px;
+  position: relative;
+  left: 330px;
+  top: 555px;
+  -webkit-animation: bijou-animation 3.5s infinite linear;
+  -webkit-transform-origin: left top;
+  -moz-animation: bijou-animation 3.5s infinite linear;
+  -moz-transform-origin: left top;
+  -o-animation: bijou-animation 3.5s infinite linear;
+  -o-transform-origin: left top;
+  -ms-animation: bijou-animation 3.5s infinite linear;
+  -ms-transform-origin: left top;
+
+}
+#bijou2
+{
+  background-image: url(../img/bijou.png);
+  z-index: 100000;
+  width: 31px;
+  height: 42px;
+  position: relative;
+  top: 600px;
+  left: 850px;
+}
+#bijou2:hover
+{
+ -webkit-animation: bijou2-animation 1.5s 1 linear;
+ -moz-animation: bijou2-animation 1.5s 1 linear;
+ -o-animation: bijou2-animation 1.5s 1 linear;
+ -ms-animation: bijou2-animation 1.5s 1 linear;
+}
+#conductrice
+{
+  background-image: url(../img/conductrice.png);
+  z-index: 100000;
+  width: 55px;
+  height: 82px;
+  position: relative;
+  top: 535px;
+  left: 660px;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -o-transition:0.5s;
+  -ms-transition:0.5s;
+}
+#conductrice:hover
+{
+background-image: url(../img/conductrice-sang.png);
+z-index: 100000;
+width: 55px;
+height: 82px;
+position: relative;
+-webkit-transition:0.5s;
+-moz-transition:0.5s;
+-o-transition:0.5s;
+-ms-transition:0.5s;
+}
+#tel
+{
+  background-image: url(../img/ecran-tel.png);
+  z-index: 100000;
+  width: 41px;
+  height: 44px;
+  position: relative;
+}
+#bijou3
+{
+  background-image: url(../img/bijou.png);
+  z-index: 100000;
+  width: 41px;
+  height: 52px;
+  position: relative;
+  top: 685px;
+  left: 640px;
+  -webkit-animation: bijou3-animation 3.5s infinite linear;
+  -webkit-transform-origin: center top;
+  -moz-animation: bijou3-animation 3.5s infinite linear;
+  -moz-transform-origin: center top;
+  -o-animation: bijou3-animation 3.5s infinite linear;
+  -o-transform-origin: center top;
+  -ms-animation: bijou3-animation 3.5s infinite linear;
+  -ms-transform-origin: center top;
+}
+#cadavre
+{
+  z-index: 100000;
+  width: 147px;
+  height: 44px;
+  position: relative;
+  top: 200px;
+  left: 200px;
+}
+#music-note1
+{
+  background: url(../img/music-note1.png);
+  width: 20px;
+  height: 20px;
+  z-index: 1000000;
+  position: relative;
+  top: 290px;
+  left: 700px;
+  -webkit-animation: musci-note1-animation 2s infinite linear;
+  -moz-animation: musci-note1-animation 2s infinite linear;
+  -o-animation: musci-note1-animation 2s infinite linear;
+  -ms-animation: musci-note1-animation 2s infinite linear;
+  }
+#music-note2
+{
+  background: url(../img/music-note2.png);
+  width: 20px;
+  height: 20px;
+  z-index: 1000000;
+  position: relative;
+  top: 275px;
+  left: 700px;
+  -webkit-animation: musci-note2-animation 3s infinite linear;
+  -moz-animation: musci-note2-animation 3s infinite linear;
+  -o-animation: musci-note2-animation 3s infinite linear;
+  -ms-animation: musci-note2-animation 3s infinite linear;
+}
+#sprite-barre{
+  background: url(../img/sprite-barre.png);
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 668px;
+  left: 827px;
+  -webkit-animation: sprite-barre 5s steps(7, end) infinite;
+  -moz-animation: sprite-barre 5s steps(7, end) infinite;
+  -o-animation: sprite-barre 5s steps(7, end) infinite;
+  -ms-animation: sprite-barre 5s steps(7, end) infinite;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------End Illus*/
+/*--------------------------------------------------------------Animations*/
+@-webkit-keyframes camera-animation 
+{
+  0%   {-webkit-transform:rotate(0deg);}
+  50%  {-webkit-transform:rotate(30deg);}
+  100% {-webkit-transform:rotate(0deg);}
+}   
+@-webkit-keyframes enseigne-animation
+{
+  0%   {-webkit-transform:rotate(0deg);}
+  50%  {-webkit-transform:rotateX(-30deg);}
+  100% {-webkit-transform:rotate(0deg);}
+}
+@-webkit-keyframes bijou-animation
+{
+  0%   {-webkit-transform:rotateX(0deg);}
+  50%  {-webkit-transform:rotateX(180deg);}
+  100% {-webkit-transform:rotateX(360deg);}
+}
+@-webkit-keyframes bijou3-animation
+{
+  0%   {-webkit-transform:rotateZ(0deg);}
+  50%  {-webkit-transform:rotateZ(6deg);}
+  100% {-webkit-transform:rotateZ(0deg);}
+}
+@-webkit-keyframes bijou2-animation
+{
+  0%   {-webkit-transform:rotateZ(0deg);}
+  50%  {-webkit-transform:rotateZ(6deg);}
+  100% {-webkit-transform:rotateZ(0deg);}
+}
+@-webkit-keyframes voiture-animation
+{
+  0%   { -webkit-transform:rotate(0deg);}
+  10%  { -webkit-transform:rotate(-10deg);}
+  20%  { -webkit-transform:rotate(20deg);}
+  30%  { -webkit-transform:rotate(-20deg);}
+  40%  { -webkit-transform:rotate(10deg);}
+  50%  { -webkit-transform:rotate(0deg);}
+  60%  { -webkit-transform:rotate(10deg);}
+  70%  { -webkit-transform:rotate(-10deg);}
+  80%  { -webkit-transform:rotate(5deg);}
+  90%  { -webkit-transform:rotate(-5deg);}
+  100% { -webkit-transform:rotate(0deg);}
+}
+@-webkit-keyframes glow {
+  to {
+      box-shadow: 0 0 5px #f0f0f0;
+     }
+}
+@-webkit-keyframes glow_porte1 {
+  to {
+      box-shadow: 0 0 40px #f0f0f0;
+     }
+}
+@-webkit-keyframes musci-note1-animation
+{
+  0%    { top: 290px; left: 710px; opacity: 0;}
+  10%   { top: 280px; left: 725px; opacity: 1;}
+  20%   { top: 270px; left: 720px; opacity: 1;}
+  30%   { top: 260px; left: 715px; opacity: 1;}
+  40%   { top: 250px; left: 720px; opacity: 1;}
+  50%   { top: 240px; left: 715px; opacity: 1;}
+  60%   { top: 230px; left: 720px; opacity: 1;}
+  70%   { top: 220px; left: 715px; opacity: 1;}
+  80%   { top: 210px; left: 720px; opacity: 1;}
+  90%   { top: 200px; left: 725px; opacity: 0.5;}
+  100%  { top: 190px; left: 710px; opacity: 0;}
+}
+@-webkit-keyframes musci-note2-animation
+{
+  0%    { top: 290px; left: 700px; opacity: 0;}
+  10%   { top: 280px; left: 715px; opacity: 1;}
+  20%   { top: 270px; left: 730px; opacity: 1;}
+  30%   { top: 260px; left: 715px; opacity: 1;}
+  40%   { top: 250px; left: 730px; opacity: 1;}
+  50%   { top: 240px; left: 715px; opacity: 1;}
+  60%   { top: 230px; left: 730px; opacity: 1;}
+  70%   { top: 220px; left: 715px; opacity: 1;}
+  80%   { top: 210px; left: 730px; opacity: 1;}
+  90%   { top: 200px; left: 715px; opacity: 0.5;}
+  100%  { top: 190px; left: 700px; opacity: 0;}
+}
+@-webkit-keyframes sprite-barre {
+  from { background-position: 0px 0px; -webkit-transform:rotate(40deg); }
+  to { background-position: -350px 0px; -webkit-transform:rotate(40deg); }
+}
+@-moz-keyframes camera-animation 
+{
+  0%   {-moz-transform:rotate(0deg);}
+  50%  {-moz-transform:rotate(30deg);}
+  100% {-moz-transform:rotate(0deg);}
+}   
+@-moz-keyframes enseigne-animation
+{
+  0%   {-moz-transform:rotate(0deg);}
+  50%  {-moz-transform:rotateX(-30deg);}
+  100% {-moz-transform:rotate(0deg);}
+}
+@-moz-keyframes bijou-animation
+{
+  0%   {-moz-transform:rotateX(0deg);}
+  50%  {-moz-transform:rotateX(180deg);}
+  100% {-moz -transform:rotateX(360deg);}
+}
+@-moz-keyframes bijou3-animation
+{
+  0%   {-moz-transform:rotateZ(0deg);}
+  50%  {-moz-transform:rotateZ(6deg);}
+  100% {-moz-transform:rotateZ(0deg);}
+}
+@-moz-keyframes bijou2-animation
+{
+  0%   {-moz-transform:rotateZ(0deg);}
+  50%  {-moz-transform:rotateZ(6deg);}
+  100% {-moz-transform:rotateZ(0deg);}
+}
+@-moz-keyframes voiture-animation
+{
+  0%   { -moz-transform:rotate(0deg);}
+  10%  { -moz-transform:rotate(-10deg);}
+  20%  { -moz-transform:rotate(20deg);}
+  30%  { -moz-transform:rotate(-20deg);}
+  40%  { -moz-transform:rotate(10deg);}
+  50%  { -moz-transform:rotate(0deg);}
+  60%  { -moz-transform:rotate(10deg);}
+  70%  { -moz-transform:rotate(-10deg);}
+  80%  { -moz-transform:rotate(5deg);}
+  90%  { -moz-transform:rotate(-5deg);}
+  100% { -moz-transform:rotate(0deg);}
+}
+@-moz-keyframes glow {
+  to {
+      box-shadow: 0 0 5px #f0f0f0;
+     }
+}
+@-moz-keyframes glow_porte1 {
+  to {
+      box-shadow: 0 0 40px #f0f0f0;
+     }
+}
+@-moz-keyframes musci-note1-animation
+{
+  0%    { top: 290px; left: 710px; opacity: 0;}
+  10%   { top: 280px; left: 725px; opacity: 1;}
+  20%   { top: 270px; left: 720px; opacity: 1;}
+  30%   { top: 260px; left: 715px; opacity: 1;}
+  40%   { top: 250px; left: 720px; opacity: 1;}
+  50%   { top: 240px; left: 715px; opacity: 1;}
+  60%   { top: 230px; left: 720px; opacity: 1;}
+  70%   { top: 220px; left: 715px; opacity: 1;}
+  80%   { top: 210px; left: 720px; opacity: 1;}
+  90%   { top: 200px; left: 725px; opacity: 0.5;}
+  100%  { top: 190px; left: 710px; opacity: 0;}
+}
+@-moz-keyframes musci-note2-animation
+{
+  0%    { top: 290px; left: 700px; opacity: 0;}
+  10%   { top: 280px; left: 715px; opacity: 1;}
+  20%   { top: 270px; left: 730px; opacity: 1;}
+  30%   { top: 260px; left: 715px; opacity: 1;}
+  40%   { top: 250px; left: 730px; opacity: 1;}
+  50%   { top: 240px; left: 715px; opacity: 1;}
+  60%   { top: 230px; left: 730px; opacity: 1;}
+  70%   { top: 220px; left: 715px; opacity: 1;}
+  80%   { top: 210px; left: 730px; opacity: 1;}
+  90%   { top: 200px; left: 715px; opacity: 0.5;}
+  100%  { top: 190px; left: 700px; opacity: 0;}
+}
+@-moz-keyframes sprite-barre {
+  from { background-position: 0px 0px; -moz-transform:rotate(40deg); }
+  to { background-position: -350px 0px; -moz-transform:rotate(40deg); }
+}
+@-o-keyframes camera-animation 
+{
+  0%   {-o-transform:rotate(0deg);}
+  50%  {-o-transform:rotate(30deg);}
+  100% {-o-transform:rotate(0deg);}
+}   
+@-o-keyframes enseigne-animation
+{
+  0%   {-o-transform:rotate(0deg);}
+  50%  {-o-transform:rotateX(-30deg);}
+  100% {-o-transform:rotate(0deg);}
+}
+@-o-keyframes bijou-animation
+{
+  0%   {-o-transform:rotateX(0deg);}
+  50%  {-o-transform:rotateX(180deg);}
+  100% {-o -transform:rotateX(360deg);}
+}
+@-o-keyframes bijou3-animation
+{
+  0%   {-o-transform:rotateZ(0deg);}
+  50%  {-o-transform:rotateZ(6deg);}
+  100% {-o-transform:rotateZ(0deg);}
+}
+@-o-keyframes bijou2-animation
+{
+  0%   {-o-transform:rotateZ(0deg);}
+  50%  {-o-transform:rotateZ(6deg);}
+  100% {-o-transform:rotateZ(0deg);}
+}
+@-o-keyframes voiture-animation
+{
+  0%   { -o-transform:rotate(0deg);}
+  10%  { -o-transform:rotate(-10deg);}
+  20%  { -o-transform:rotate(20deg);}
+  30%  { -o-transform:rotate(-20deg);}
+  40%  { -o-transform:rotate(10deg);}
+  50%  { -o-transform:rotate(0deg);}
+  60%  { -o-transform:rotate(10deg);}
+  70%  { -o-transform:rotate(-10deg);}
+  80%  { -o-transform:rotate(5deg);}
+  90%  { -o-transform:rotate(-5deg);}
+  100% { -o-transform:rotate(0deg);}
+}
+@-o-keyframes glow {
+  to {
+      box-shadow: 0 0 5px #f0f0f0;
+     }
+}
+@-o-keyframes glow_porte1 {
+  to {
+      box-shadow: 0 0 40px #f0f0f0;
+     }
+}
+@-o-keyframes musci-note1-animation
+{
+  0%    { top: 290px; left: 710px; opacity: 0;}
+  10%   { top: 280px; left: 725px; opacity: 1;}
+  20%   { top: 270px; left: 720px; opacity: 1;}
+  30%   { top: 260px; left: 715px; opacity: 1;}
+  40%   { top: 250px; left: 720px; opacity: 1;}
+  50%   { top: 240px; left: 715px; opacity: 1;}
+  60%   { top: 230px; left: 720px; opacity: 1;}
+  70%   { top: 220px; left: 715px; opacity: 1;}
+  80%   { top: 210px; left: 720px; opacity: 1;}
+  90%   { top: 200px; left: 725px; opacity: 0.5;}
+  100%  { top: 190px; left: 710px; opacity: 0;}
+}
+@-o-keyframes musci-note2-animation
+{
+  0%    { top: 290px; left: 700px; opacity: 0;}
+  10%   { top: 280px; left: 715px; opacity: 1;}
+  20%   { top: 270px; left: 730px; opacity: 1;}
+  30%   { top: 260px; left: 715px; opacity: 1;}
+  40%   { top: 250px; left: 730px; opacity: 1;}
+  50%   { top: 240px; left: 715px; opacity: 1;}
+  60%   { top: 230px; left: 730px; opacity: 1;}
+  70%   { top: 220px; left: 715px; opacity: 1;}
+  80%   { top: 210px; left: 730px; opacity: 1;}
+  90%   { top: 200px; left: 715px; opacity: 0.5;}
+  100%  { top: 190px; left: 700px; opacity: 0;}
+}
+@-o-keyframes sprite-barre {
+  from { background-position: 0px 0px; -o-transform:rotate(40deg); }
+  to { background-position: -350px 0px; -o-transform:rotate(40deg); }
+}
+@-ms-keyframes camera-animation 
+{
+  0%   {-ms-transform:rotate(0deg);}
+  50%  {-ms-transform:rotate(30deg);}
+  100% {-ms-transform:rotate(0deg);}
+}   
+@-ms-keyframes enseigne-animation
+{
+  0%   {-ms-transform:rotate(0deg);}
+  50%  {-ms-transform:rotateX(-30deg);}
+  100% {-ms-transform:rotate(0deg);}
+}
+@-ms-keyframes bijou-animation
+{
+  0%   {-ms-transform:rotateX(0deg);}
+  50%  {-ms-transform:rotateX(180deg);}
+  100% {-ms -transform:rotateX(360deg);}
+}
+@-ms-keyframes bijou3-animation
+{
+  0%   {-ms-transform:rotateZ(0deg);}
+  50%  {-ms-transform:rotateZ(6deg);}
+  100% {-ms-transform:rotateZ(0deg);}
+}
+@-ms-keyframes bijou2-animation
+{
+  0%   {-ms-transform:rotateZ(0deg);}
+  50%  {-ms-transform:rotateZ(6deg);}
+  100% {-ms-transform:rotateZ(0deg);}
+}
+@-ms-keyframes voiture-animation
+{
+  0%   { -ms-transform:rotate(0deg);}
+  10%  { -ms-transform:rotate(-10deg);}
+  20%  { -ms-transform:rotate(20deg);}
+  30%  { -ms-transform:rotate(-20deg);}
+  40%  { -ms-transform:rotate(10deg);}
+  50%  { -ms-transform:rotate(0deg);}
+  60%  { -ms-transform:rotate(10deg);}
+  70%  { -ms-transform:rotate(-10deg);}
+  80%  { -ms-transform:rotate(5deg);}
+  90%  { -ms-transform:rotate(-5deg);}
+  100% { -ms-transform:rotate(0deg);}
+}
+@-ms-keyframes glow {
+  to {
+      box-shadow: 0 0 5px #f0f0f0;
+     }
+}
+@-ms-keyframes glow_porte1 {
+  to {
+      box-shadow: 0 0 40px #f0f0f0;
+     }
+}
+@-ms-keyframes musci-note1-animation
+{
+  0%    { top: 290px; left: 710px; opacity: 0;}
+  10%   { top: 280px; left: 725px; opacity: 1;}
+  20%   { top: 270px; left: 720px; opacity: 1;}
+  30%   { top: 260px; left: 715px; opacity: 1;}
+  40%   { top: 250px; left: 720px; opacity: 1;}
+  50%   { top: 240px; left: 715px; opacity: 1;}
+  60%   { top: 230px; left: 720px; opacity: 1;}
+  70%   { top: 220px; left: 715px; opacity: 1;}
+  80%   { top: 210px; left: 720px; opacity: 1;}
+  90%   { top: 200px; left: 725px; opacity: 0.5;}
+  100%  { top: 190px; left: 710px; opacity: 0;}
+}
+@-ms-keyframes musci-note2-animation
+{
+  0%    { top: 290px; left: 700px; opacity: 0;}
+  10%   { top: 280px; left: 715px; opacity: 1;}
+  20%   { top: 270px; left: 730px; opacity: 1;}
+  30%   { top: 260px; left: 715px; opacity: 1;}
+  40%   { top: 250px; left: 730px; opacity: 1;}
+  50%   { top: 240px; left: 715px; opacity: 1;}
+  60%   { top: 230px; left: 730px; opacity: 1;}
+  70%   { top: 220px; left: 715px; opacity: 1;}
+  80%   { top: 210px; left: 730px; opacity: 1;}
+  90%   { top: 200px; left: 715px; opacity: 0.5;}
+  100%  { top: 190px; left: 700px; opacity: 0;}
+}
+@-ms-keyframes sprite-barre {
+  from { background-position: 0px 0px; -ms-transform:rotate(40deg); }
+  to { background-position: -350px 0px; -ms-transform:rotate(40deg); }
+}
+ /*--------------------------------------------------------------end Animations*/
+ /*-------------------------------------------------------------- Media Queries*/
+@media all and (min-width: 1025px) {
+.background
+{
+  background: url(../img/background.png) no-repeat;
+  background-color: #1F2026;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.footer
+{
+margin-bottom: 50px;
+}
+.container-index,.container-p2,.container-p3,.container-p4,.container-p5
+{
+  margin-top: 5%;
+}
+}
+ /*-------------------------------------------------------------- ENd Media Queries*/
+
+
+
+
+
+ 
