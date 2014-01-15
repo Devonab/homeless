@@ -4,66 +4,49 @@
         <meta charset="utf-8">
         <title>Kate1</title>
         <meta name="description" content="">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
        <main>
-           <a href="#"><img id="enseigne" src="img/enseigne.svg" alt="" /> </a>
-           <img class="fond" src="img/bijouterie.svg" alt="bijouterie" />
-           <div id="divcam">          
-           		<a href="#"><img id="camera" src="img/camera.png" alt="camera de surveillane" /></a>
-                <img id="rec" src="img/rec.png" alt="lumiere montrant l enregistrement"/>
-           </div>
+               <img class="fond" src="img/tab_bord.svg" alt="Tableau de bord de voiture" />
+               
+               <img id="siege" src="img/sieges_retro_bijou.svg" alt="La bijoutière assise dans sa voiture">
            
-           <img id="etiquette" src="img/etiquette.png" alt="bijouterie"/>
-           <div id="grise" class="bas"></div>
-           <div id="clair" class="bas"></div>
-           <div id="foncee" class="bas"> 
-           		<p>Je serai bien restée chez moi, mais travail oblige... La journée va être looooonnnnnnnngue ...</p> 
-           		<img src="img/boucle.svg" id="boucle" alt="bocle raffinée avec le logo de la bijouterie">
-           </div>
-
-           <a href="#"><img id="sdf2" src="img/sdfs2.svg"  alt="Léo et son père"></a>
-        	<audio id="beep-one" controls="controls" preload="auto">
-			<source src="sound/klaxon.mp3"/>
-			<source src="sound/klaxon.ogg"/>
-			</audio>
-				
-			<img src="img/voiturepasse.svg" id="voiturepasse" alt="la bijoutière passe avec sa voiture"></a>
-				
-			<script>var beep = $("#beep-one")[0];
-				$("#voiturepasse")
-				.mouseenter(function() {
-				beep.play();
-				});
-           </script>
+           		<a href="#"> <img src="img/bijou.svg" id="bijou" alt="bijou offert par son mari" ></a>
            
-           <img src="img/feu.svg" id="feu" alt="feu de circulation">
-          <img id="lumierefeu" src="img/lumierefeu.svg" alt="lumieres du feu" >
+           		<a href="#"> <img src="img/telephone.svg" id="allo" alt="Magnifique telephone rose" ></a>
+           
+            	<img id="retro" src="img/retro.svg" alt="Retroviseur de voiture">
+           
+			   <div id="grise" class="bas"></div>
+			   <div id="clair" class="bas"></div>
+			   <div id="foncee" class="bas"> 
+               		<p>Ce GSM m'énerve à sonner sans arrêts! ... 
+               <p>Allo loulou, c'est toi ? ...Quoi !? Ca va ?! </p> <img src="img/boucle.svg" id="boucle" alt="bocle raffinée avec le logo de la bijouterie"></div>
        </main>
        <footer>
        </footer>
-        	<script src="js/jquery-1.10.2.min.js"></script>
-        	<script>
+        
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script>
                 jQuery(document).ready(function(){
                     console.log('jsok');
                               // page suivante
             $('body').keydown(function (e) {
                 if (e.keyCode == 40) {
-                    window.location = 'bijoutiere_2.html';
+                    window.location = '2.html';
                 }
             });
             
             // page précédente
             $('body').keydown(function (e) {
                 if (e.keyCode == 38) {
-                    window.location = 'index.html';
+                    window.location = '4.html';
                 }
             });
                     
                 });
-        </script>
+            </script>
     </body>
 </html>

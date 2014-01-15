@@ -193,11 +193,11 @@ main img {
 }
 
 #allo {
-	width:15%; 
+	width:7%; 
 	height:30%;
 	position:absolute;
 	top:30%;
-	left:39.5%;
+	left:42%;
 	z-index:2;
 	-webkit-animation: vibration 3s linear  infinite alternate;
 }
@@ -286,11 +286,11 @@ footer {
 
 @font-face {
     font-family: 'aaargh';
-    src: url('font/Aaargh/Aaargh-webfont.eot');
-    src: url('font/Aaargh/Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/Aaargh/Aaargh-webfont.woff') format('woff'),
-         url('font/Aaargh/Aaargh-webfont.ttf') format('truetype'),
-         url('font/Aaargh/Aaargh-webfont.svg#aaarghnormal') format('svg');
+    src: url('../font/Aaargh/Aaargh-webfont.eot');
+    src: url('../font/Aaargh/Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Aaargh/Aaargh-webfont.woff') format('woff'),
+         url('../font/Aaargh/Aaargh-webfont.ttf') format('truetype'),
+         url('../font/Aaargh/Aaargh-webfont.svg#aaarghnormal') format('svg');
     font-weight: normal;
     font-style: normal;
 }
