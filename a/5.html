@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jones Condoléances - Workshop DWMWKID</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/animation.css" />
+    
+</head>
+<body>
+    
+    <div id="bg">
+
+    <main>
+        
+        <img id="general" src="img/scene5/general.svg" alt="La scène représente l'officier Jones arrivé sur les lieux de l'accident."/>
+        
+        <img id="truc" src="img/scene5/ambulance.svg" alt="Le petit est dans l'ambulance et regarde le police d'un air triste." />
+            
+        
+    </main>
+        
+        <footer>
+            
+            <p id="txt_footer">Homeless</p>
+        
+            <a href="www.dwm.re"><img id="logo" src="img/interface/logo-dwm-white.svg"></a>
+            
+        </footer>
+        
+    </div><!-- end bg -->
+    
+<script src="js/jquery-1.10.2.min.js"></script>
+<script>
+        jQuery(document).ready(function(){
+            
+            // page suivante
+            $('body').keydown(function (e) {
+                if (e.keyCode == 40) {
+                    window.location = '../index.html';
+                }
+            });
+            
+            // page précédente
+            $('body').keydown(function (e) {
+                if (e.keyCode == 38) {
+                    window.location = '4.html';
+                }
+            });
+
+        });
+  </script>
+</body>
+</html>
