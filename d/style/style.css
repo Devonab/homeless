@@ -36,8 +36,6 @@ body,html
   -moz-box-shadow: 0px 0px 20px #555;
   -o-box-shadow: 0px 0px 20px #555;
   -ms-box-shadow: 0px 0px 20px #555;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=12);
-  zoom: 1; /* Pour ce couillon d'IE et ses versions antérieures à la 9 */
   }
 .container-p2{
   width: 1024px;
@@ -49,8 +47,6 @@ body,html
   -moz-box-shadow: 0px 0px 20px #555;
   -o-box-shadow: 0px 0px 20px #555;
   -ms-box-shadow: 0px 0px 20px #555;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=12);
-  zoom: 1; /* Pour ce couillon d'IE et ses versions antérieures à la 9 */
 }
 .container-p3 {
   width: 1024px;
@@ -61,8 +57,6 @@ body,html
   -moz-box-shadow: 0px 0px 20px #555;
   -o-box-shadow: 0px 0px 20px #555;
   -ms-box-shadow: 0px 0px 20px #555;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=12);
-  zoom: 1; /* Pour ce couillon d'IE et ses versions antérieures à la 9 */
 }
 .container-p4 {
   width: 1024px;
@@ -73,8 +67,6 @@ body,html
   -moz-box-shadow: 0px 0px 20px #555;
   -o-box-shadow: 0px 0px 20px #555;
   -ms-box-shadow: 0px 0px 20px #555;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=12);
-  zoom: 1; /* Pour ce couillon d'IE et ses versions antérieures à la 9 */
 }
 .container-p5 {
   width: 1024px;
@@ -85,8 +77,6 @@ body,html
   -moz-box-shadow: 0px 0px 20px #555;
   -o-box-shadow: 0px 0px 20px #555;
   -ms-box-shadow: 0px 0px 20px #555;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=12);
-  zoom: 1; /* Pour ce couillon d'IE et ses versions antérieures à la 9 */
 }
 audio
 {
