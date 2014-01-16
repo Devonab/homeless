@@ -291,7 +291,7 @@ opacity: 0.8;
   -o-animation: glow 1.5s infinite alternate;
   -ms-animation: glow 1.5s infinite alternate;
 }
-#enseigne:hover, #bijou:hover, #camera:hover, #camera2:hover, #bijou3:hover
+#bijou:hover, #camera:hover, #camera2:hover, #bijou3:hover
 {
 -webkit-animation-play-state:paused;
 -moz-animation-play-state:paused;
@@ -481,12 +481,6 @@ position: relative;
   50%  {-webkit-transform:rotate(30deg);}
   100% {-webkit-transform:rotate(0deg);}
 }   
-@-webkit-keyframes enseigne-animation
-{
-  0%   {-webkit-transform:rotate(0deg);}
-  50%  {-webkit-transform:rotateX(-30deg);}
-  100% {-webkit-transform:rotate(0deg);}
-}
 @-webkit-keyframes bijou-animation
 {
   0%   {-webkit-transform:rotateX(0deg);}
@@ -567,12 +561,6 @@ position: relative;
   50%  {-moz-transform:rotate(30deg);}
   100% {-moz-transform:rotate(0deg);}
 }   
-@-moz-keyframes enseigne-animation
-{
-  0%   {-moz-transform:rotate(0deg);}
-  50%  {-moz-transform:rotateX(-30deg);}
-  100% {-moz-transform:rotate(0deg);}
-}
 @-moz-keyframes bijou-animation
 {
   0%   {-moz-transform:rotateX(0deg);}
@@ -653,12 +641,6 @@ position: relative;
   50%  {-o-transform:rotate(30deg);}
   100% {-o-transform:rotate(0deg);}
 }   
-@-o-keyframes enseigne-animation
-{
-  0%   {-o-transform:rotate(0deg);}
-  50%  {-o-transform:rotateX(-30deg);}
-  100% {-o-transform:rotate(0deg);}
-}
 @-o-keyframes bijou-animation
 {
   0%   {-o-transform:rotateX(0deg);}
@@ -739,12 +721,6 @@ position: relative;
   50%  {-ms-transform:rotate(30deg);}
   100% {-ms-transform:rotate(0deg);}
 }   
-@-ms-keyframes enseigne-animation
-{
-  0%   {-ms-transform:rotate(0deg);}
-  50%  {-ms-transform:rotateX(-30deg);}
-  100% {-ms-transform:rotate(0deg);}
-}
 @-ms-keyframes bijou-animation
 {
   0%   {-ms-transform:rotateX(0deg);}
