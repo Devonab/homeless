@@ -39,6 +39,16 @@
 			<div id="overlay"></div>
 		</div><!-- End container -->
 		<footer class="footer"><a href="http://www.dwm.re"><img  class="logo-dwm" src="img/dwm-logo.svg" alt="Logo DWM"></a><a class="homeless" href="../index.html">Homeless</a></footer>
+    <div id="popup">
+    
+        <h1>Avant de commencer</h1>
+        
+        <p>Vous pouvez progresser dans le temps avec les flèches du clavier.</p>
+        <img src="../img/popup.svg" alt="flèches haut et bas" />
+        <p>Le reste des interactions se fait à la souris.</p>
+        <span id="tohide">Compris</span>
+        
+    </div>
 		
 		<script>
         	jQuery(document).ready(function(){
@@ -54,7 +64,11 @@
                     window.location = '../index.html';
                 }
             							   });
-        									});
+            //popup
+            $('#tohide').click(function(e) {
+                $('#popup').addClass('hide');
+            });
+            });
   		</script>
 		</body>	
 </html>

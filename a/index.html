@@ -52,6 +52,16 @@
         
     </footer>
     </div>
+        <div id="popup">
+    
+        <h1>Avant de commencer</h1>
+        
+        <p>Vous pouvez progresser dans le temps avec les flèches du clavier.</p>
+        <img src="../img/popup.svg" alt="flèches haut et bas" />
+        <p>Le reste des interactions se fait à la souris.</p>
+        <span id="tohide">Compris</span>
+        
+    </div>
 <script src="js/jquery-1.10.2.min.js"></script>
 <script>
         jQuery(document).ready(function(){
@@ -69,6 +79,10 @@
                     window.location = '../index.html';
                 }
             });
+            //popup
+            $('#tohide').click(function(e) {
+                $('#popup').addClass('hide');
+            });   
 
         });
   </script>
