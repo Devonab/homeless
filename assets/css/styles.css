@@ -266,6 +266,10 @@ footer #dwm {
 /*     MAKING OF    */
 /*  --------------  */
 
+/*  --------------  */
+/*     MAKING OF    */
+/*  --------------  */
+
 .style_cred_makingof main {
     margin: auto;
     width: 1024px;
@@ -295,7 +299,10 @@ footer #dwm {
 #sections_m {
     border: 1px solid red;
     position: relative;
-    height: 700px;
+    height: 480px;
+    width:640px;
+    margin:auto;
+    
 }
 #makingof section {
     width: 100%;
