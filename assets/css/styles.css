@@ -297,9 +297,8 @@ footer #dwm {
 #mak_list li a:hover { background: #434552; }
 
 #sections_m {
-    border: 1px solid red;
     position: relative;
-    height: 480px;
+    height: 800px;
     width:640px;
     margin:auto;
     
@@ -317,34 +316,70 @@ footer #dwm {
             transition: all .4s linear;
 }
 
-#alexandre { background: red; }
 #antoine { background: yellow; }
 #mikael { background: green; ;}
 #guillaume { background: purple; }
-
 #makingof section:target { opacity: 1; z-index: 10; }
 
 /* ---------- ALEX ------------ */
 
-#alexandre img {
-    margin-bottom: 10px;
-    
-    -webkit-transition: all .4s linear;
-       -moz-transition: all .4s linear;
-            transition: all .4s linear;
-}
+#makingof section div { margin-bottom: 15px;}
+#makingof #alexandre a { cursor: default;}
 
-.texte_sec {
+#m1 a {
     display: block;
-    position: relative;
-    opacity: 0;
-    top: -262px;
+    text-decoration: none;
+    text-indent: -9999px;
     width: 640px;
     height: 250px;
-    background: rgba(0,0,0,.6);
+    background: url(../../img/makingof/alex/01.jpg) no-repeat 0 0;
 }
 
-#alexandre img:hover ~ .texte_sec { opacity: 1; }
+#m1 a:hover { background-position: 0 -250px; }
+
+#m2 a {
+    display: block;
+    text-decoration: none;
+    text-indent: -9999px;
+    width: 640px;
+    height: 250px;
+    background: url(../../img/makingof/alex/02.jpg) no-repeat 0 0;
+}
+
+#m2 a:hover { background-position: 0 -250px; }
+
+#m3 a {
+    display: block;
+    text-decoration: none;
+    text-indent: -9999px;
+    width: 640px;
+    height: 250px;
+    background: url(../../img/makingof/alex/03.jpg) no-repeat 0 0;
+}
+
+#m3 a:hover { background-position: 0 -250px; }
+
+#m4 a {
+    display: block;
+    text-decoration: none;
+    text-indent: -9999px;
+    width: 640px;
+    height: 250px;
+    background: url(../../img/makingof/alex/04.jpg) no-repeat 0 0;
+}
+
+#m4 a:hover { background-position: 0 -250px; }
+
+#m5 a {
+    display: block;
+    text-decoration: none;
+    text-indent: -9999px;
+    width: 640px;
+    height: 250px;
+    background: url(../../img/makingof/alex/05.jpg) no-repeat 0 0;
+}
+
+#m5 a:hover { background-position: 0 -250px; }
 
 /* ---------- ANTOINE ------------ */
 
