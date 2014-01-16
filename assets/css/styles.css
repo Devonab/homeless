@@ -391,7 +391,39 @@ footer #dwm {
 /* ---------- GUILLAUME ------------ */
 
 /* ---------- MIKAEL ------------ */
+#mikael #defilement {
+width:640px;
+height:480px;
 
+z-index:13;
+display:block;
+background-image:url(../../img/makingof/mikael/defilement.png);
+background-repeat:no-repeat;
+-webkit-animation: defilement 30s linear 0s infinite ;
+-moz-animation: defilement 30s linear 0s infinite ;
+-ms-animation: defilement 30s linear 0s infinite ;
+overflow:hidden;
+}
+@-webkit-keyframes defilement
+{
+0%   {background-position:0 0; opacity:0;}  
+24%   {background-position:0 0;opacity:1;}   
+25%   {background-position:0 0;opacity:1;}
+26%   {background-position:-640px 0;opacity:1;}   
+41%   {background-position:-640px 0;opacity:1;}   
+42%   {background-position:-1280px 0;opacity:1;}    
+57%   {background-position:-1280px 0;opacity:1;}   
+58%   {background-position:-1920px 0;opacity:1;}    
+73%   {background-position:-1920px 0;opacity:1;}   
+74%   {background-position:-2560px 0;opacity:1;}    
+90%   {background-position:-2560px 0;opacity:1;}
+92%   {background-position: 0 0;opacity:1;}    
+100%   {background-position:0 0;opacity:0;}
+}
+#mikael #defilement:hover
+{
+    -webkit-animation-play-state:paused;
+}
 
 
 
