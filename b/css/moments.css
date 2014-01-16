@@ -24,30 +24,47 @@ main { padding: 0; }
 /* --------------- */
 /*      MOMENT 1   */
 /* --------------- */
+        
+@-webkit-keyframes bras {
+    0% { -webkit-transform: rotate(0deg); }
+    50% { -webkit-transform: rotate(-10deg);}
+    100% { -webkit-transform: rotate(0deg); }
+}
+@-moz-keyframes bras {
+    0% { -moz-transform: rotate(0deg); }
+    50% { -moz-transform: rotate(-10deg);}
+    100% { -moz-transform: rotate(0deg); }
+}
+@keyframes bras {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-10deg);}
+    100% { transform: rotate(0deg); }
+}
+
 
 @-webkit-keyframes animtv {
    from { background-position:  0; }
-    to { background-position: -700px; }
+    to { background-position: -484px; }
 }
         
 @-moz-keyframes animtv {
     from { background-position: 0px; }
-    to { background-position: -700px; }
+    to { background-position: -484px; }
 }
         
 @-ms-keyframes animtv {
     from { background-position:  0px; }
-    to { background-position: -700px; }
+    to { background-position: -484px; }
 }
 
 @-o-keyframes animtv {
     from { background-position:  0px; }
-    to { background-position: -700px; }
+    to { background-position: -484px; }
 }
         
 @keyframes animtv {
     from { background-position:  0px; }
-    to { background-position: -700px; }
+    to { background-position: -484px; }
 }
 
 /* PLACEMENTS */
@@ -55,24 +72,30 @@ main { padding: 0; }
 #william_svg {
     width: 30%;
     height: 60%;
-    position: relative;
-    top:30%;
-    left:-25%;
+    position: absolute;
+    bottom:10%;
+    left:10%;
 }
-    
-#kate1 {
-    width: 15%;
-    height: 70%;
-}
-        
+
+#bras { 
+    position: absolute;
+    top: 36%;
+    left: 0;
+    width: 50%;
+    height: 50%;
+            
+-webkit-animation: bras 2s linear infinite;
+   -moz-animation: bras 2s linear infinite;
+        animation: bras 2s linear infinite;
+}      
         
 #tv {
-    width: 175px;
-    height: 183px;
+    width: 121px;
+    height: 127px;
     background: url(../img/m1/int_tv.png) 0 0 no-repeat;
     text-indent: -9999px;
     position: absolute;
-    top: 40%;
+    top: 37%;
     left: 59.4%;
             
     -webkit-animation: animtv 4s steps(4) infinite;
@@ -98,21 +121,28 @@ main { padding: 0; }
 /* DISPOSITION LIENS + BULLES PENSEES */
 
 /* KATE */
-#dame {
+
+#kate_link_1 {
     display: block;
-    width: 25%;
-    height: 60%;
-    position: absolute;
-    top: 30%;
-    left: 37%;
-    text-indent: -9999px;
+    position: relative;
+    left: 40%;
+    background: url(../img/m1/l-dam.svg) no-repeat center center;
+    width: 200px;
+    height: 600px;
+    background-size: contain;
+            
+}
+
+#kate_link_1:hover { 
+    background: url(../img/m1/l-dam_hov.svg) no-repeat center center;
+    background-size: contain;
 }
         
 .bulle_dame p {
-    position: absolute;
+    position: relative;
     opacity: 0;
-    top: 20%;
-    left: 40%;
+    top: -680px;
+    left: 370px;
     padding: 10px;
     width: 20%;
     background: rgba(0,0,0,.8);
@@ -123,29 +153,28 @@ main { padding: 0; }
         -ms-transition: all 1s ease-out;
          -o-transition: all 1s ease-out;
             transition: all 1s ease-out;
-}
+} 
+
 
 /* --------------- */
         
 /* WILLIAM */
 
-        
-#william {
+#lien_william1 {
     display: block;
     position: absolute;
-    top: 30%;
-    left: 23%;
-    width: 10%;
-    height: 30%;
-    background: none;
-    text-indent: -99999px;
+    width: 200px;
+    height: 200px;
+    bottom: 200px;
+    left: 160px;
+    z-index: 100;
 }
         
 .bulle_william p {
-    position: relative;
+    position: absolute;
+    border: 1px solid red;
     opacity: 0;
-    top: 150px;
-    left: 18%;
+    top: 25%;
     padding: 10px;
     width: 20%;
     background: rgba(0,0,0,.8);
@@ -164,18 +193,19 @@ main { padding: 0; }
         
 #tele{
     display: block;
-    position: absolute;
+    position: relative;
     width: 12%;
     height: 20%;
-    top: 40%;
+    top: -400px;
     left: 60%;
     text-indent: -99999px;
+    z-index: 100;
 }
         
 .bulle_tele p {
     position: relative;
     opacity: 0;
-    top: 120px;
+    top: -600px;
     left: 55%;
     padding: 10px;
     width: 20%;
@@ -200,12 +230,14 @@ main { padding: 0; }
     top: 25%;
     left: 33%;
     text-indent: -99999px;
+    z-index: 100;
 }
         
-.bulle_pan p {
+.bulle_pan  {
     position: relative;
     opacity: 0;
     left: 24%;
+    top: -80%;
     padding: 10px;
     width: 20%;
     background: rgba(0,0,0,.8);
@@ -221,9 +253,9 @@ main { padding: 0; }
 /* --------------- */
 
     #tele:hover ~ .bulle_tele p { opacity: 1; }
-    #dame:hover ~ .bulle_dame p { opacity: 1; }
-    #william:hover ~  .bulle_william p { opacity: 1; }
-    #pan:hover ~.bulle_pan p { opacity: 1;}
+    #kate_link_1:hover ~ .bulle_dame p { opacity: 1; }
+    #lien_william1:hover ~  .bulle_william p { opacity: 1; }
+    #pan:hover ~.bulle_pan { opacity: 1;}
 
 /* --------------- */
 
@@ -238,6 +270,11 @@ main { padding: 0; }
 
 }
 
+@media all and (min-width: 1025px)  {
+    #tv {
+        top: 50%;
+    }
+}
 
 
 
@@ -247,6 +284,13 @@ main { padding: 0; }
 /* --------------- */
 
 /* PLACEMENTS */
+
+#bureau_svg {
+    width: 47%;
+    position: relative;
+    top: 24%;
+    left: -18%;
+        }
 
 /* WILLIAM */
 #william_alarm {
