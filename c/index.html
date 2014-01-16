@@ -2,15 +2,17 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Kate1</title>
+        <title>A+ mon chou | Kate - Homeless |</title>
         <meta name="description" content="">
+        <meta name="author" content="Alexandre Buruk, Guillaume Deschryver, Mikaël Haeck & Antoine Lagna">
         <link rel="stylesheet" href="style/reset.css">
         <link rel="stylesheet" href="style/style.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="../img/favicon.png" />
+    	<link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
     </head>
     <body>
       <main>
-      	<a href="#"><img src="img/enseigne.svg" id="enseigne" alt="enseigne de la bijouterie de Mr et Ms Allen"> </a>
+      	<a href="../b/2.html"><img src="img/enseigne.svg" id="enseigne" alt="enseigne de la bijouterie de Mr et Ms Allen"> </a>
 
         <img class="fond" src="img/bijouterie.svg" alt="La bijouterie de Mr et Ms Allen " />
          
@@ -18,7 +20,7 @@
 			<source src="sound/police-sound.mp3"/>
 			<source src="sound/police-sound.ogg"/>
 		</audio>				     
-		<a href="#">
+		<a href="../a/1.html">
 			<img id="etiquette" src="img/etiquette.png" alt="Panneau annoncant une protection par alarme" />
 		</a>
 		
@@ -33,16 +35,16 @@
          <div id="grise" class="bas"></div>
          <div id="clair" class="bas"></div>
          <div id="foncee" class="bas"> 
-            <p>Ralala, à peine le temps de revoir mon chouchou que je dois repartir...
-               J'ai même pas su lui dire au revoir, distraite par ces SDF qui réclamaient de l'argent...</p>
+            <p>Ralala, à peine le temps de voir mon chouchou que je dois repartir...</p>
+               <p>J'ai même pas su lui dire au revoir, distraite par ces SDF qui réclamaient de l'argent...</p>
         	<img src="img/boucle.svg" id="boucle" alt="bocle raffinée avec le logo de la bijouterie">
          </div>
 
          <img src="img/scooter.svg" id="scooter" alt="Un scooter passe" width="400" height="400">
 
-         <img id="madame"src="img/bijoutiere.svg" >
+         <a href="2.html"><img id="madame" src="img/bijoutiere.svg" alt="Kate sortant de la bijouterie de son mari" ></a>
            
-         <a href="#"><img id="sdf"src="img/sdfs.svg" ></a>
+         <a href="../d/1.html"><img id="sdf" src="img/sdfs.svg" alt="Les 2 sdf faisant la manche devant la bijouterie"></a>
            
          <img id="panneau" src="img/panneau.svg" alt="panneau routier" >
            
@@ -50,12 +52,12 @@
            
          <img id="lumierefeu" src="img/lumierefeu.svg" alt="lumieres du feu" >
 
-      </main>
-      <footer>
-           
-      </footer>
-
-	  <script src="js/jquery-1.10.2.min.js"></script>
+    </main>
+    <footer>
+     	<a href="http://www.dwm.re"><img class="dwm" alt="logo DWMAJ" src="img/dwm.svg"></a>
+     	<p>Homeless</p>      
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 			<script>
 					jQuery(document).ready(function(){
 						console.log('jsok');
@@ -75,5 +77,11 @@
 						
 					});
         </script>
+        <script>var beep = $("#beep-one")[0];
+				$("#etiquette")
+				.mouseenter(function() {
+				beep.play();
+				});
+           </script>
     </body>
 </html>

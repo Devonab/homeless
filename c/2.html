@@ -2,18 +2,20 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Kate1</title>
+        <title> Boulot... | Kate - Homeless |</title>
         <meta name="description" content="">
+        <meta name="author" content="Alexandre Buruk, Guillaume Deschryver, Mikaël Haeck & Antoine Lagna">
         <link rel="stylesheet" href="style/reset.css">
         <link rel="stylesheet" href="style/style.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="../img/favicon.png" />
+    	<link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
     </head>
     <body>
        <main>
-           <a href="#"><img id="enseigne" src="img/enseigne.svg" alt="" /> </a>
+           <a href="../b/2.html"><img id="enseigne" src="img/enseigne.svg" alt="" /> </a>
            <img class="fond" src="img/bijouterie.svg" alt="bijouterie" />
            <div id="divcam">          
-           		<a href="#"><img id="camera" src="img/camera.png" alt="camera de surveillane" /></a>
+           		<a href="../a/2.html"><img id="camera" src="img/camera.png" alt="camera de surveillane" /></a>
                 <img id="rec" src="img/rec.png" alt="lumiere montrant l enregistrement"/>
            </div>
            
@@ -21,31 +23,28 @@
            <div id="grise" class="bas"></div>
            <div id="clair" class="bas"></div>
            <div id="foncee" class="bas"> 
-           		<p>Je serai bien restée chez moi, mais travail oblige... La journée va être looooonnnnnnnngue ...</p> 
+           		<p>Je serai bien restée chez moi, mais, travail oblige... La journée va être looooonnnnnnnngue ...</p> 
            		<img src="img/boucle.svg" id="boucle" alt="bocle raffinée avec le logo de la bijouterie">
            </div>
 
-           <a href="#"><img id="sdf2" src="img/sdfs2.svg"  alt="Léo et son père"></a>
+           <a href="../d/2.html"><img id="sdf2" src="img/sdfs2.svg"  alt="Léo et son père"></a>
+           
         	<audio id="beep-one" controls="controls" preload="auto">
-			<source src="sound/klaxon.mp3"/>
-			<source src="sound/klaxon.ogg"/>
+			 	<source src="sound/klaxon.mp3"/>
+			 	<source src="sound/klaxon.ogg"/>
 			</audio>
 				
-			<img src="img/voiturepasse.svg" id="voiturepasse" alt="la bijoutière passe avec sa voiture"></a>
-				
-			<script>var beep = $("#beep-one")[0];
-				$("#voiturepasse")
-				.mouseenter(function() {
-				beep.play();
-				});
-           </script>
+			<a href="../c/3.html"><img src="img/voiturepasse.svg" id="voiturepasse" alt="la bijoutière passe avec sa voiture"></a>
+
            
            <img src="img/feu.svg" id="feu" alt="feu de circulation">
-          <img id="lumierefeu" src="img/lumierefeu.svg" alt="lumieres du feu" >
+            <img id="lumierefeu" src="img/lumierefeu.svg" alt="lumieres du feu" >
        </main>
        <footer>
+     		<a href="http://www.dwm.re"><img class="dwm" alt="logo DWMAJ" src="img/dwm.svg"></a>
+     		<p>Homeless</p>
        </footer>
-        	<script src="js/jquery-1.10.2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
         	<script>
                 jQuery(document).ready(function(){
                     console.log('jsok');
@@ -65,5 +64,11 @@
                     
                 });
         </script>
+    			<script>var beep = $("#beep-one")[0];
+				$("#voiturepasse")
+				.mouseenter(function() {
+				beep.play();
+				});
+           </script>
     </body>
 </html>

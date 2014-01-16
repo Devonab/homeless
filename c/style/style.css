@@ -2,230 +2,498 @@ html, body {
 width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background-image: url(img/degrade.svg);
+	background-image: url(../img/degra.svg);
 	background-repeat: no-repeat;
 	margin: 0 auto;
+	background-position:center;
 }
 
-main {
-	margin: 0 auto;
-	padding: 0;
-	height: 73%;
-	position: relative;
-}
-#foncee p {
-	position:relative;
-	font-family:"aaargh", sans-serif;
-	color:#fff;
-	text-align:center;
-	margin:0 auto;
-	z-index:10000;
-}
+	main {
+		margin: 0 auto;
+		padding: 0;
+		height: 73%;
+		position: relative;
+	}
+		
+		
+		#boucle {
+			height:25%;
+			width:100%;
+			padding-top:0.6%;
+			position:relative;
+			z-index:100000;
+		}
+		
+		main img {
+			padding: 0;
+			margin: 0;
+		}
+		
+		
+		#foncee{
+			background: #666;
+			height: 25%;
+			width: 100%;
+			padding: 1% 0;
+		}
 
-#boucle {
-	height:25%;
-	width:100%;
-	padding-top:0.6%;
-	position:relative;
-	z-index:100000;
-}
+			#foncee p {
+			position:relative;
+			font-family:"aaargh", sans-serif;
+			color:#fff;
+			text-align:center;
+			margin:0 auto;
+			z-index:10000;
+			padding:0 1%;
+			font-size:15px;
+			line-height:21px;
+		}
+		
+		#clair{
+			position:relative;
+			background: #CCC;
+			height: 5%;
+			width: 100%;
+			z-index:2;
+		}
+		
+		#beep-one{display:none;}
+		
+		#grise{
+			margin-top: -3px;
+			background: #E6E6E6;
+			height: 10%;
+			width: 100%;
+			position:relative;
+			z-index:2;
+		}
 
-main img {
-	padding: 0;
-	margin: 0;
-}
+<!-- 1.html -->
+		
+		#panneau {
+			position: fixed;
+			right: -5%;
+			bottom:0;
+			z-index: 1000;
+			padding: 0;
+			width: 30%;
+			height: 60%;
+		}
 
-#panneau {
-	position: fixed;
-	right: -5%;
-	bottom:0;
-	z-index: 1000;
-	padding: 0;
-	width: 30%;
-	height: 60%;
-}
+		#sdf{
+			position: absolute;
+			bottom: -10%;
+			left: 42%;
+			z-index: 100;
+			width:13%;
+			height:50%;
+		}
+		
+		
+		#madame {
+			position: absolute;
+			bottom: -7%;
+			left: 15%;
+			z-index: 100;
+			height:35%;
+			width:20%;
+		}
 
+		#scooter{
+			position: absolute;
+			display:block;
+			bottom: -50%;
+			left:100%;
+			z-index: 1000;
+			-webkit-animation: scooter 7s ease-in-out 0s infinite normal both;
+			-moz-animation: scooter 7s ease-in-out 0s infinite normal both;
+			-ms-animation: scooter 7s ease-in-out 0s infinite normal both;
+		}
 
-#foncee{
-	background: #666;
-	height: 25%;
-	width: 100%;
-    padding: 2% 0;
-}
+		#enseigne {
+			position: absolute;
+			top:24%;
+			left:35%;
+			width:36%;
+			height:20%;
+		}
+		
+		#etiquette{
+			background:red;
+			width:2%;
+			height:4.5%;
+			position:absolute;
+			z-index:1000;
+			right:30%;
+			bottom:10%;
+		}
 
-#clair{
-	background: #CCC;
-	height: 5%;
-	width: 100%;
-}
+		
+		#sdf2{
+			height:25%;
+			width:12%;
+			position: absolute;
+			bottom:-7%;
+			left: 40%;
+			z-index: 100;
+		}
+		
+		#voiturepasse{
+			position: absolute;
+			width:90%;
+			height: 90%;
+			bottom: -55%;
+			z-index: 1000;
+			-webkit-animation: passe 10s ease-in-out 1s infinite normal both;
+			-moz-animation: passe 10s ease-in-out 1s infinite normal both;
+			-ms-animation: passe 10s ease-in-out 1s infinite normal both;
+		}
+		
+		
+		#feu {
+			position: absolute;
+			top:0;
+			left: 10%;
+			width:10%;
+			height:30%;
+		}
+		
+		#lumierefeu {
+			position: absolute;
+			top:3%;
+			left: 14%;
+			width:4%;
+			height:8%;
+			-webkit-animation: feu 5s linear  infinite alternate;
+			-moz-animation: feu 5s linear  infinite alternate;
+			-ms-animation: feu 5s linear  infinite alternate;
+		}
+		
+		#divcam {
+			position:absolute;
+			width:3%;
+			height:4%;
+			top:45%;
+			left:30%;
+			z-index:1000;
+			-webkit-animation: camera 3s ease-in-out 1s infinite alternate both;
+			-moz-animation: camera 3s ease-in-out 1s infinite alternate both;
+			-ms-animation: camera 3s ease-in-out 1s infinite alternate both;
+		}
+		
+			#divcam:hover {
+				-webkit-animation-play-state:paused;
+				-moz-animation-play-state:paused;
+				-ms-animation-play-state:paused;
+			}
+		
+		#rec {
+			position:absolute;
+			top:30%;
+			left:10%;
+			width:20%;
+			height:30%;
+			-webkit-animation: rec 2s ease-in-out 1s infinite alternate both;
+			-moz-animation: rec 2s ease-in-out 1s infinite alternate both;
+			-ms-animation: rec 2s ease-in-out 1s infinite alternate both;
+		}
+		
+		#camera {
+			width:100%;
+			height:70%;
+			position:absolute;}
+		
+		.fond {
+			width:100%;
+			height:100%;
+			margin:0 auto;
+			z-index:-4;
+		}
+		
+		#fond_4 {
+			width:100%;
+			height:100%;
+		}
+		
+		
+		#vibra {
+			-webkit-animation: vibration 3s linear  infinite alternate;
+			-moz-animation: vibration 3s linear  infinite alternate;    
+			-ms-animation: vibration 3s linear  infinite alternate;
+			height:100%;
+			width:100%;
+			position:absolute;
+			z-index:7;
+		}
+		
+		
+		input {
+				position:absolute;
+				display:none;
+				visibility:hidden;
+				}
+		
+		
+		label[for=check] {
+			position:absolute;
+			left:13%;
+			height:100%;
+			width:30%;
+			top:-95%;
+			display:block;
+			z-index:6;
+			opacity:0;
+			-webkit-transition-duration:2s;
+			-moz-transition-duration:2s;
+			-ms-transition-duration:2s;
+			cursor:pointer;
+		}
+		
+		#check:checked ~ label[for=check] {opacity:1;}
+		
+		#bulle {
+			position:absolute;
+			width:75%;
+			height:40%;
+			left:-42%;
+			top:-7%;
+		}
+		
+		
+		#siege {
+			position:absolute;
+			width:100%;
+			height:100%;
+			top:-97%;
+			z-index:5;     
+		}
+		
+		#allo {
+			width:7%; 
+			height:30%;
+			position:absolute;
+			top:-72%;
+			left:42.5%;
+			z-index:7;
+			-webkit-animation: rota 2s ease-in-out  infinite alternate;
+			-moz-animation: rota 2s ease-in-out  infinite alternate;
+			-ms-animation: rota 2s ease-in-out  infinite alternate;
+			-webkit-transform-origin: bottom right;
+			-moz-transform-origin: bottom right;
+			-ms-transform-origin: bottom right;
+		}
+		
+		
+		#pv {
+			width:10%;
+			height:10%;
+			position:absolute;
+			left:44%;
+			top:-3%;
+			z-index:1000;
+		}
+		
+		
+		#retro {
+			width:10%;
+			height:20%;
+			position:absolute;
+			top:4%;
+			left:45%;
+			z-index:1000;
+		}
+		
+		#bijou {
+			position:absolute;
+			top:17%;
+			left:30%;
+			width:45%;
+			height:20%;
+			-webkit-animation: rota 2s ease-in-out  infinite alternate;
+			-moz-animation: rota 2s ease-in-out  infinite alternate;
+			-ms-animation: rota 2s ease-in-out  infinite alternate;
+			-webkit-transform-origin: top center;
+			-moz-transform-origin: top center;
+			-ms-transform-origin: top center;
+		}
+		
+			#bijou:hover {
+				-webkit-animation-play-state:paused;
+				-moz-animation-play-state:paused;
+				-ms-animation-play-state:paused;
+				
+			}
+		
+		#arbre_bout {
+			position:absolute;
+			top:-17%;
+			left:-10%;
+		}
+		
+		#voiturevole {
+			width:75%;
+			height:75%;
+			position:absolute;
+			top:43%;
+			z-index:3;
+			-webkit-animation: vibration 2s ease-in-out  infinite alternate;
+			-moz-animation: vibration 2s ease-in-out  infinite alternate;
+			-ms-animation: vibration 2s ease-in-out  infinite alternate;
+		}
+		
+		#blingbling {
+			position:absolute;
+			bottom:42%;
+			left:38%;
+			opacity:0.3;
+			z-index:3;
+			width:3%;
+			height:6%;
+			padding:1%;
+			-webkit-animation: blingbling 10s linear  infinite normal both;
+			-moz-animation: blingbling 10s linear  infinite normal both;
+			-ms-animation: blingbling 10s linear  infinite normal both;
+		}
+		
+		#derapage {
+			position:absolute;
+			top:95%;
+			left:-5%;
+			z-index:2;
+			width:20%;
+			height:20%;
+			opacity:0.5;
+			z-index:8;
+		}
+		
+		#leoassis {
+			position:absolute;
+			top:80%;
+			z-index:1;
+			right:10%;
+			z-index:5;
+		}
+		
+		#panneau_pol {
+			position:absolute;
+			right:0;
+			top:74%;
+			z-index:3;
+			width:10%;
+			height:30%;
+			z-index:5;
+			margin-right:1%;
+		}
+		
+		#arbreproche {
+			position:absolute;
+			z-index:3;
+			right:4%;
+			bottom: -35%;
+			height:150%;
+		}
+		
+		#terre {
+			position:absolute;
+			z-index:3;
+			left:16%;
+			bottom:-10%;
+			-webkit-animation: vibration 1s ease-in-out  infinite alternate;
+			-moz-animation: vibration 1s ease-in-out  infinite alternate;
+			-ms-animation: vibration 1s ease-in-out  infinite alternate;
+		}
+		
+		audio {display:none;}
+		
+		#allo2 {
+			position:absolute;
+			z-index:11;
+			top:45%;
+			right:25%;
+			-webkit-animation: vibration 1s ease-in-out  infinite alternate;
+			-moz-animation: vibration 1s ease-in-out  infinite alternate;
+			-ms-animation: vibration 1s ease-in-out  infinite alternate;
+		}
+		
+		#allo2:hover {
+			-webkit-animation-play-state:paused;
+			-moz-animation-play-state:paused;
+			-ms-animation-play-state:paused;
+		}
+		
+		#retro2 {
+			position:absolute;
+			width:25%;
+			height:25%;
+			top:0;
+			left:37%;
+			z-index:3;
+		}
+		
+		#vitre {
+			position:absolute;
+			width:100%;
+			height:100%;
+			margin:0 auto;
+			top:0;
+			z-index:1;
+		}
+		
+		#kate {
+			position:absolute;
+			top:29%;
+			left:5%;
+			text-align:center;
+			z-index:1;
+		}
+		
+		#police, #policediv{
+			position:absolute;
+			top:50%;
+			right:3%;
+			width:30%;
+			height:30%;
+			-webkit-animation: arrive 3s ease-in-out 1 alternate;
+			-moz-animation: arrive 3s ease-in-out 1 alternate;
+			-ms-animation: arrive 3s ease-in-out 1 alternate;
+		}
 
-#beep-one{display:none;}
+		#policediv {
+			z-index:10;
+		}
 
-#grise{
-	margin-top: -3px;
-	background: #E6E6E6;
-	height: 10%;
-	width: 100%;
-    position:
-        relative;
-}
-
-#sdf,{
-	position: absolute;
-	top: 66%;
-	left: 40%;
-	z-index: 100;
-}
-
-#sdf2{
-	height:44%;
-	width:12%;
-	position: absolute;
-	top: 66%;
-	left: 40%;
-	z-index: 100;
-}
-
-#madame {
-	position: absolute;
-	top: 75%;
-	left: 30%;
-	z-index: 100;
-}
-
-#enseigne {
-	position: absolute;
-	top:24%;
-	left:35%;
-	width:36%;
-	height:20%;
-}
-
-#etiquette{
-	background:red;
-	width:2%;
-	height:4.5%;
-	position:absolute;
-	z-index:1000;
-	right:45.5%;
-	bottom:10%;
-}
-
-#voiturepasse{
-	position: absolute;
-	width:90%;
-	height: 90%;
-	bottom: -55%;
-	z-index: 1000;
-	-webkit-animation: passe 10s ease-in-out 1s infinite normal both;
-}
-
-#scooter{
-	position: absolute;
-    display:block;
-	bottom: -50%;
-    left:100%;
-	z-index: 1000;
-	-webkit-animation: scooter 7s ease-in-out 0s infinite normal both;
-}
-
-
-#feu {
-	position: absolute;
-	top:0;
-	left: 10%;
-	width:10%;
-	height:30%;
-}
-
-#lumierefeu {
-	position: absolute;
-	top:3%;
-	left: 14%;
-	width:4%;
-	height:8%;
-	-webkit-animation: feu 5s linear  infinite alternate;
-}
-
-#divcam {
-	position:absolute;
-	width:3%;
-	height:4%;
-	top:45%;
-	left:30%;
-	z-index:1000;
-	-webkit-animation: camera 3s ease-in-out 1s infinite alternate both;
-}
-
-#divcam:hover {
-	-webkit-animation-play-state:paused;
-}
-
-#rec {
-	position:absolute;
-	top:30%;
-	left:10%;
-	width:20%;
-	height:30%;
-	-webkit-animation: rec 2s ease-in-out 1s infinite alternate both;
-}
-
-#camera {
-	width:100%;
-	height:70%;
-	position:absolute;}
-
-.fond {
-	width:100%;
-	height:100%;
-	margin:0 auto;
-}
-
-
-#siege {
-	text-align:center;
-	position:absolute;
-	top:5%;
-	width:100%;
-	height:100%;
-	z-index:1;
-	-webkit-animation: vibration 3s linear  infinite alternate;
-}
-
-#allo {
-	width:7%; 
-	height:30%;
-	position:absolute;
-	top:30%;
-	left:42%;
-	z-index:2;
-	-webkit-animation: vibration 3s linear  infinite alternate;
-}
-
-footer {
-	position: fixed;
-	height: 15%;
-	width: 100%;
-	bottom:0;
-}
-
-#retro {
-	width:10%;
-	height:20%;
-	position:absolute;
-	top:4%;
-	left:45%;
-	z-index:3;
-}
-
-#bijou {
-	position:absolute;
-	top:17%;
-	left:50%;
-	z-index:2;
-	-webkit-animation: rota 2s ease-in-out  infinite alternate;
-	-webkit-transform-origin: top center;
-}
+		#verre {
+			position:absolute;
+			z-index:10000000;
+			width:100%;
+			height:20%;
+			bottom:-12%;
+			-webkit-animation: vibration 3s ease-in-out  infinite alternate both ;
+			-moz-animation: vibration 3s ease-in-out  infinite alternate both;
+			-ms-animation: vibration 3s ease-in-out  infinite alternate both;
+		}
+		
+		footer {
+			right:0;
+			position: absolute;
+			height: 5%;
+			width: 7%;
+			background:#4d4d4d;
+			padding:1%;
+			border-radius: 10px 0 0 0px;
+			bottom:0%;;
+			z-index:10000000;
+			text-align:center;
+			vertical-align:center;
+		}
+		
+		footer p {
+		font-family:sans-serif;
+		color:#efefef;
+		font-size:12px;}
+		
+		.dwm {
+		padding:2%;}
 
 @-webkit-keyframes passe
 {
@@ -268,8 +536,17 @@ footer {
 @-webkit-keyframes vibration
 {
 0%   {-webkit-transform:translate(2px, -2px);}
-84% {-webkit-transform:translate(1, 2px);}
-100% {-webkit-transform:translate(-2px,2px);}
+84% {-webkit-transform:translate(1px, -1px);}
+100% {-webkit-transform:translate(1.5px,0px);}
+}
+
+@-webkit-keyframes blingbling
+{
+0%   {-webkit-transform:rotate(-180deg);
+    }
+    
+100% {-webkit-transform:rotate(180deg);
+    }
 }
 
 @-webkit-keyframes rota
@@ -283,6 +560,160 @@ footer {
 0%   {opacity:1;}
 100% {opacity:0;}
 }
+
+@-webkit-keyframes arrive
+{
+0%   {-webkit-transform:translateX(2000px);}
+100% {-webkit-transform:translateX(0);}
+}
+
+<!-- moz -->
+@-moz-keyframes passe
+{
+0%   {-moz-transform:translate(250%, 2.1%);}
+40%  {-moz-transform:translate(8%, 2%);}
+60%  {-moz-transform:translate(8%, 2%);}
+75%  {-moz-transform:translateX(10%);}
+100% {-moz-transform:translate(-250%,2.1%);}
+}
+
+@-moz-keyframes scooter
+{
+0%   {-moz-transform:translate(0, 0);}
+100% {-moz-transform:translate(-2250px, 2px);}
+}
+
+@-moz-keyframes feu
+{
+
+0%   {-moz-transform:translateY(0%);
+		opacity: 1;}
+39%   {-moz-transform:translateY(0%);
+		opacity: 1;}
+40%   {	-moz-transform:translateY(0%);
+		opacity: 0;}
+41%   {-moz-transform:translateY(200%);
+		opacity: 0;}
+42%   {-moz-transform:translateY(200%);
+		opacity: 1;}
+100%   {-moz-transform:translateY(200%);
+		opacity: 1;}
+}
+
+@-moz-keyframes camera
+{
+0%   {-moz-transform:rotate(30deg);}
+100%   {-moz-transform:rotate(60deg);}
+}
+
+@-moz-keyframes vibration
+{
+0%   {-moz-transform:translate(2px, -2px);}
+84% {-moz-transform:translate(1px, 1px);}
+100% {-moz-transform:translate(1.5px,-1px);}
+}
+
+@-moz-keyframes blingbling
+{
+0%   {-moz-transform:rotate(-180deg);
+    }
+    
+100% {-moz-transform:rotate(180deg);
+    }
+}
+
+@-moz-keyframes rota
+{
+0%   {-moz-transform:rotate(-4deg);}
+100%   {-moz-transform:rotate(4deg);}
+}
+
+@-moz-keyframes rec
+{
+0%   {opacity:1;}
+100% {opacity:0;}
+}
+
+@-moz-keyframes arrive
+{
+0%   {-moz-transform:translateX(2000px);}
+100% {-moz-transform:translateX(0);}
+}
+
+<!-- MS -->
+
+@-ms-keyframes passe
+{
+0%   {-ms-transform:translate(250%, 2.1%);}
+40%  {-ms-transform:translate(8%, 2%);}
+60%  {-ms-transform:translate(8%, 2%);}
+75%  {-ms-transform:translateX(10%);}
+100% {-ms-transform:translate(-250%,2.1%);}
+}
+
+@-ms-keyframes scooter
+{
+0%   {-ms-transform:translate(0, 0);}
+100% {-ms-transform:translate(-2250px, 2px);}
+}
+
+@-ms-keyframes feu
+{
+
+0%   {-ms-transform:translateY(0%);
+		opacity: 1;}
+39%   {-ms-transform:translateY(0%);
+		opacity: 1;}
+40%   {	-ms-transform:translateY(0%);
+		opacity: 0;}
+41%   {-ms-transform:translateY(200%);
+		opacity: 0;}
+42%   {-ms-transform:translateY(200%);
+		opacity: 1;}
+100%   {-ms-transform:translateY(200%);
+		opacity: 1;}
+}
+
+@-ms-keyframes camera
+{
+0%   {-ms-transform:rotate(30deg);}
+100%   {-ms-transform:rotate(60deg);}
+}
+
+@-ms-keyframes vibration
+{
+0%   {-ms-transform:translate(2px, -2px);}
+84% {-ms-transform:translate(1px, 1px);}
+100% {-ms-transform:translate(1.5px,-1px);}
+}
+
+@-ms-keyframes blingbling
+{
+0%   {-ms-transform:rotate(-180deg);
+    }
+    
+100% {-ms-transform:rotate(180deg);
+    }
+}
+
+@-ms-keyframes rota
+{
+0%   {-ms-transform:rotate(-4deg);}
+100%   {-ms-transform:rotate(4deg);}
+}
+
+@-ms-keyframes rec
+{
+0%   {opacity:1;}
+100% {opacity:0;}
+}
+
+@-ms-keyframes arrive
+{
+0%   {-ms-transform:translateX(2000px);}
+100% {-ms-transform:translateX(0);}
+}
+
 
 @font-face {
     font-family: 'aaargh';

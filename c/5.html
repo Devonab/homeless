@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Paf... | Kate - Homeless |</title>
+        <meta name="description" content="">
+        <meta name="author" content="Alexandre Buruk, Guillaume Deschryver, Mikaël Haeck & Antoine Lagna">
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="icon" type="image/png" href="../img/favicon.png" />
+    	<link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+    </head>
+    <body>
+       <main>
+           
+            <img class="fond" src="img/fond_5.svg" alt="tronc d'arbre dans le pare-brise" />
+           
+            <img id="police" src="img/police.svg" alt="voiture de police avec l'Officier Jhones">
+           
+           
+             <img id="vitre" src="img/casse.svg" alt="vitre cassee" />  
+               
+           
+           	<img src="img/bijou.svg" id="bijou" alt="bijou offert par son mari" >
+           
+            <a href="../b/5.html"> <img src="img/gsm.svg" id="allo2" alt="Magnifique telephone rose" ></a>
+           
+            <a href="../b/5.html"> <img id="retro2" src="img/retro2.svg" alt="Retroviseur de voiture"></a>
+           
+            <img id="kate" src="img/kate.svg" alt="Kate, morte au volant">
+           
+             <a href="../a/4.html"><div id="policediv"></div></a>
+             
+             <img id="verre" src="img/verre.svg" alt="morceaux de verre">
+           
+			<div id="grise" class="bas"></div>
+		    <div id="clair" class="bas"></div>
+		    <div id="foncee" class="bas">
+                <p>Que m'arrive t'il ?... Je ne sens plus mon corps....</p>
+                 <p> Qui est ce gosse assis à l'arrière ?...</p> 
+                 <img src="img/boucle.svg" id="boucle" alt="bocle raffinée avec le logo de la bijouterie">
+                 </div>
+       </main>
+       <footer>
+     		<a href="http://www.dwm.re"><img class="dwm" alt="logo DWMAJ" src="img/dwm.svg"></a>
+     		<p>Homeless</p>
+       </footer>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        	<script>
+                jQuery(document).ready(function(){
+                    console.log('jsok');
+                              // page suivante
+            $('body').keydown(function (e) {
+                if (e.keyCode == 40) {
+                    window.location = '../index.html';
+                }
+            });
+            
+            // page précédente
+            $('body').keydown(function (e) {
+                if (e.keyCode == 38) {
+                    window.location = '4.html';
+                }
+            });
+                    
+                });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>M****de | Kate - Homeless |</title>
+        <meta name="description" content="">
+        <meta name="author" content="Alexandre Buruk, Guillaume Deschryver, Mikaël Haeck & Antoine Lagna">
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="icon" type="image/png" href="../img/favicon.png" />
+    	<link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+    </head>
+    <body>
+       <main>
+           
+            <img class="fond" id="fond_4" src="img/fond_4.svg" alt="Paysage forestier" />
+           
+            <a href="../a/3.html"> <img id="panneau_pol" src="img/panneau_police.svg" alt="Pub pour le metier de policier" /></a>
+           
+           <img id="derapage" src="img/derapage.svg" alt="Traces de freinage.">
+           
+           <a href="../d/3.html"> <img id="leoassis" src="img/leo_assis.svg" alt="Le petit SDF, assis au sol"></a>
+           
+            <img id="arbre_bout" src="img/arbre_proche.svg" alt="arbre proche">
+           
+            <img id="terre" src="img/motte_terre.svg" alt="Mottes de terres dues la sortie de route de la voiture">  
+           
+           <audio id="beep-two" controls="controls" preload="auto">
+				<source src="sound/cri.mp3"/>
+				<source src="sound/cri.ogg"/>
+			</audio>
+           
+            <a href="../c/5.html"><img id="voiturevole" src="img/voiture_vole.svg" alt="La voiture de la bijoutiere, en vol, avant le crash avec l'arbre"></a>
+           
+           <a href="../b/5.html">
+           		<img id="blingbling" src="img/bligbling.svg" alt="eclat de lumiere produit pas le pendentif"> 
+           	</a>
+           
+            <img id="arbreproche" src="img/arbre_tres_proche.svg" alt="L'arbre dans lequel la bijoutiere va se crasher incessement sous peu">
+           
+			    <div id="grise" class="bas"></div>
+			    <div id="clair" class="bas"></div>
+			    <div id="foncee" class="bas"> 
+               		<p>T'es sur ? J'arrive le plus vite possi...</p>
+                    <p> M*******de !! </p> 
+                    <img src="img/boucle.svg" id="boucle" alt="bocle raffinée avec le logo de la bijouterie">                   
+                </div>
+       </main>
+       <footer>
+     		<a href="http://www.dwm.re"><img class="dwm" alt="logo DWMAJ" src="img/dwm.svg"></a>
+     		<p>Homeless</p>
+       </footer>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        
+        <script>
+                jQuery(document).ready(function(){
+                    console.log('jsok');
+                              // page suivante
+            $('body').keydown(function (e) {
+                if (e.keyCode == 40) {
+                    window.location = '5.html';
+                }
+            });
+            
+            // page précédente
+            $('body').keydown(function (e) {
+                if (e.keyCode == 38) {
+                    window.location = '3.html';
+                }
+            });
+                    
+                });
+            </script>
+    			<script>var beep = $("#beep-two")[0];
+				$("#voiturevole")
+				.mouseenter(function() {
+				beep.play();
+				});
+           </script>
+    </body>
+</html>
