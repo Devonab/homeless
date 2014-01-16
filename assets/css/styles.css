@@ -334,3 +334,50 @@ footer p { color: #009FE3; }
     }
 }
 
+/* ------ */
+/* CREDIT */
+/* ------ */
+
+#container > img {
+    width:100%;
+}
+
+#nom {
+    margin:20px;
+}
+
+#import {
+    margin:0 auto;
+    margin-bottom:35px;
+    padding:20px 10px 20px 10px;
+    width:200px;
+    border:1px solid #009FE3;
+}
+
+#import p:first-child {
+    font-size:18px;
+    border-bottom:1px solid #009FE3;
+}
+
+#nom p {
+    padding:5px;
+}
+
+#nom p:nth-child(2) {
+    margin-top:13px;
+}
+
+#nom p a {
+    text-decoration:none;
+    padding:5px;
+    color:#009FE3;
+}
+
+#nom p a:hover {
+    opacity:.6;
+}
+
+#nom p a:visited {
+    text-decoration:underline;
+    opacity:.6;
+}
