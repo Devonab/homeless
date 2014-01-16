@@ -179,7 +179,9 @@ main section ul li a img { position: relative; bottom: 0; }
     #leo     { background: url(../../img/leo_prez.png) no-repeat top center; }
 
 
-
+.style_cred_makingof header {
+    background: url(/Users/Alex/Desktop/homeless/img/a-bk.png); 
+}
 
 /*  --------------  */
 /*      FOOTER      */
@@ -261,6 +263,63 @@ footer #dwm {
 
 
 /*  --------------  */
+/*     MAKING OF    */
+/*  --------------  */
+
+.style_cred_makingof main {
+    margin: auto;
+    width: 1024px;
+}
+
+#sections_m {
+    border: 1px solid red;
+    position: relative;
+    height: 700px;
+}
+
+#mak_list {
+    width: 100%;
+    margin: 15px 0;
+}
+
+#mak_list li {
+    display: inline-block;
+    width: 15%;
+}
+
+#mak_list li a {
+    border-radius: 3px;
+    display: block;
+    padding: 10px;
+    background: #343640;
+    color: #fff;
+    text-decoration: none;
+}
+
+#mak_list li a:hover { background: #434552; }
+
+#makingof section {
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    margin: 0;
+    -webkit-transition: all .4s linear;
+       -moz-transition: all .4s linear;
+            transition: all .4s linear;
+}
+
+#alexandre { opacity: 0; background: red; }
+#antoine {  opacity: 0; background: yellow; }
+#mikael {  opacity: 0; background: green; ;}
+#guillaume {  opacity: 0; background: purple; }
+
+#makingof section:target { opacity: 1; z-index: 10; }
+
+
+/*  --------------  */
 /*       TYPO       */
 /*  --------------  */
 
@@ -283,12 +342,6 @@ header h1 {
 
 main { text-align: center; padding: 20px;}
 
-.style_cred_propos h1 {
-    text-align: center;
-    font-family: 'maven_promedium';
-    font-size: 22px;
-    margin: 10px 0;
-}
 
 main h2 {
     font-size: 18px;
@@ -301,11 +354,11 @@ main h3 {
     margin-bottom: 10px;
 }
 
-.style_cred_propos p { 
-    font-family: 'maven_proregular', sans-serif;
+.style_cred_propos main h1, .style_cred_makingof main h1 { 
+    font-family: 'maven_medium', sans-serif;
     margin: 15px 0;
     line-height: 1.5; 
-    font-size: 16px; 
+    font-size: 22px; 
 }
 footer p { color: #009FE3; }
 
@@ -315,7 +368,6 @@ footer p { color: #009FE3; }
     text-decoration: underline;
     color: #025274;
 }
-
 
 /*  --------------  */
 /*  MEDIA QUIERIES  */
