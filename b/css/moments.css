@@ -470,11 +470,11 @@ main { padding: 0; }
         height: 179px;
     }
     #jones_alarm {
-        top: 53%;
-        left: 32%;
+        top: 300px;
+        left: 300px;
     }
     .bulle_alarm { 
-        top: 240px;
+        top: 220px;
         left: 230px;
     }
     .bulle_will_alarm {
@@ -708,7 +708,11 @@ main { padding: 0; }
     background: url(../img/m3/main.svg) no-repeat;
 }
         
-#leo_lien_main:hover ~ #leo_main { -webkit-animation: mains 1s linear forwards; }
+#leo_lien_main:hover ~ #leo_main { 
+    -webkit-animation: mains 1s linear forwards;
+       -moz-animation: mains 1s linear forwards;
+            animation: mains 1s linear forwards;
+}
         
 #lien_camerafx {
     position: absolute;
