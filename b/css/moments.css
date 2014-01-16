@@ -238,6 +238,7 @@ main { padding: 0; }
     opacity: 0;
     left: 24%;
     top: -80%;
+    z-index: 10;
     padding: 10px;
     width: 20%;
     background: rgba(0,0,0,.8);

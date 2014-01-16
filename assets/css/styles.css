@@ -259,6 +259,7 @@ footer #dwm {
 .style_cred_propos img {
     border: 1px solid #009FE3;
     max-width: 100%;
+    margin: 15px 0;
 }
 
 
@@ -435,6 +436,11 @@ main h3 {
     margin: 15px 0;
     line-height: 1.5; 
     font-size: 22px; 
+}
+
+.style_cred_propos p {
+    font-size: 16px;
+    margin: 10px 0;
 }
 footer p { color: #009FE3; }
 
